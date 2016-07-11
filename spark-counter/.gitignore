@@ -1,0 +1,7 @@
+.idea/
+*.iml
+*.pyc
+cache/
+target/
+.history
+*.log

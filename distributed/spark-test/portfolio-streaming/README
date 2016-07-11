@@ -1,0 +1,9 @@
+Tio build
+
+sbt assembly
+
+To Run:
+
+dse spark-submit --class PortfolioStreaming target/scala-2.10/portfolio_stream-assembly-0.1.jar 
+
+

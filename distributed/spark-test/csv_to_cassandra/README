@@ -1,0 +1,12 @@
+
+To Build:
+
+sbt assembly
+
+To Execute:
+
+Note: Add the  --master spark://<master>:7077 option if your spark master is elsewhere. <master> is the listen address of the spark master, which may be a real
+IP address.
+
+dse spark-submit --class CSV_to_Cassandra_Table target/scala-2.10/csv-to-cassandra-assembly-1.1.jar
+
