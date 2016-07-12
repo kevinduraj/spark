@@ -1,3 +1,3 @@
 #!/bin/bash
 
-dse spark -i:general-disease.scala
+dse spark -i:find-extract-insert.scala

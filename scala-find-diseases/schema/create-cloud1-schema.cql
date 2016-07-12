@@ -12,8 +12,9 @@ WITH comment='temp table'
  AND compaction  = { 'class' :  'LeveledCompactionStrategy' }; 
 -- ----------------------------------------------------------- --
 CREATE TABLE IF NOT EXISTS
-cloud1.links_clean (
+cloud1.diseases (
     url text,
+    condition text,
     PRIMARY KEY( url )
 )
 WITH comment='web page links'
