@@ -62,7 +62,7 @@ println(diseases)
 
 //-------------------------------------------------------------------------------------------------------------------------//
 csc.setKeyspace("cloud4")
-val df1 = csc.read.format("org.apache.spark.sql.cassandra").options(Map( "keyspace" -> "cloud4", "table" -> "link3" )).load
+val df1 = csc.read.format("org.apache.spark.sql.cassandra").options(Map( "keyspace" -> "cloud4", "table" -> "link4" )).load
 df1.printSchema()
 //-------------------------------------------------------------------------------------------------------------------------//
 diseases.foreach( disease => {
@@ -84,4 +84,6 @@ diseases.foreach( disease => {
 //val df4 = csc.read.format("org.apache.spark.sql.cassandra").options(Map( "keyspace" -> "disease", "table" -> "general" )).load
 //df4.count()
 //-------------------------------------------------------------------------------------------------------------------------//
+
+sys.exit()
 
