@@ -1,6 +1,6 @@
 #!/bin/bash
 #-----------------------------------------------------------------------------------#
-DB='engine39'
+DB='engine79'
 SERVER='localhost'
 #-----------------------------------------------------------------------------------#
 #                                 Drop Database
@@ -27,30 +27,30 @@ create_tables()
 SQL="
 CREATE TABLE $DB.part_$1 (
 
-  sha256url 	  char(64) 	      CHARACTER SET ascii NOT NULL,
-  md5root 	    char(32) 	      CHARACTER SET ascii NOT NULL,
+  sha256url 	char(64) 	    CHARACTER SET ascii NOT NULL,
+  md5root       char(32) 	    CHARACTER SET ascii NOT NULL,
 
-  url 		      varchar(255) 	  NOT NULL,
-  root 		      varchar(64) 	  NOT NULL,
+  url 		    varchar(255) 	NOT NULL,
+  root 		    varchar(64) 	NOT NULL,
 
-  tags 		      varchar(128) 	  DEFAULT NULL,
-  title 	      varchar(128) 	  DEFAULT NULL,
-  body 		      varchar(3072) 	DEFAULT NULL,
-  alexa 	      mediumint(6) 	  DEFAULT NULL,
-  rank 		      mediumint(6) 	  DEFAULT NULL,
-  hit1 		      mediumint(6) 	  DEFAULT NULL,
-  hit2 		      mediumint(6) 	  DEFAULT NULL,
-  hit3 		      mediumint(6) 	  DEFAULT NULL,
-  category 	    char(3) 	      DEFAULT NULL,
-  period 	      date 		        DEFAULT NULL,
+  tags 		    varchar(128) 	DEFAULT NULL,
+  title 	    varchar(128) 	DEFAULT NULL,
+  body 		    varchar(3072)   DEFAULT NULL,
+  alexa 	    mediumint(6) 	DEFAULT NULL,
+  rank 		    mediumint(6) 	DEFAULT NULL,
+  hit1 		    mediumint(6) 	DEFAULT NULL,
+  hit2 		    mediumint(6) 	DEFAULT NULL,
+  hit3 		    mediumint(6) 	DEFAULT NULL,
+  category 	    char(3) 	    DEFAULT NULL,
+  period 	    date 		    DEFAULT NULL,
 
   gunning       float(5,2)      NOT NULL DEFAULT '0.00', 
   flesch        float(5,2)      NOT NULL DEFAULT '0.00', 
   kincaid       float(5,2)      NOT NULL DEFAULT '0.00', 
   
   sentence      smallint(5)	    UNSIGNED NOT NULL DEFAULT '0',
-  words 	      float(5,2) 	    UNSIGNED NOT NULL DEFAULT '0.00',
-  syllables 	  float(7,6) 	    UNSIGNED NOT NULL DEFAULT '0.000000',
+  words 	    float(5,2) 	    UNSIGNED NOT NULL DEFAULT '0.00',
+  syllables 	float(7,6) 	    UNSIGNED NOT NULL DEFAULT '0.000000',
   complex     	float(4,2) 	    UNSIGNED NOT NULL DEFAULT '0.00'
 
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
