@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# mysql_config_editor set --login-path=local --host=localhost --user=root --password
 nicenumber()
 {
   # Note that we assume that  '.' is the decimal separator in
@@ -42,12 +42,12 @@ count()
   USERNAME=root
   DATABASE=$1
                        
-  TABLE_LIST=`mysql -u $USERNAME -p$PASSWORD -NB -e "SHOW TABLES FROM $DATABASE"`
+  TABLE_LIST=`mysql --login-path=local -NB -e "SHOW TABLES FROM $DATABASE"`
   TOTAL=0
   for E in $TABLE_LIST
   do
       #echo "Total count: "$DATABASE"."$E
-      RES=`mysql -u $USERNAME -p$PASSWORD -NB -e  "SELECT COUNT(*) FROM "$DATABASE"."$E`
+      RES=`mysql --login-path=local -NB -e  "SELECT COUNT(*) FROM "$DATABASE"."$E`
       ((RES=$RES+0))
       ((TOTAL=$RES+$TOTAL))
       echo $TOTAL $E $RES
