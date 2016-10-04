@@ -1,66 +1,58 @@
 #!/bin/bash
 #---------------------------------------------------------------------------------------#
-# mysql_config_editor set --login-path=local --host=localhost --user=root --password
-#---------------------------------------------------------------------------------------#
-SOURCE='engine77'
-DESTIN='engine81'
-FINAL1='engine82'
+SOURCE='engine82'
+SORTED='sorted'
+FINAL1='engine83'
 START='000'
-
 #---------------------------------------------------------------------------------------#
 drop_table()
 {
-  SQL="DROP TABLE IF EXISTS $DESTIN.part_$START"; echo $SQL
-  res1=$(mysql --login-path=local -e  "$SQL"); echo $res1
-}
-#---------------------------------------------------------------------------------------#
-truncate_table()
-{
-  SQL="TRUNCATE TABLE $FINAL1.part_$START"; echo $SQL
+  SQL="DROP TABLE IF EXISTS $SORTED.part_$START"; echo $SQL
   res1=$(mysql --login-path=local -e  "$SQL"); echo $res1
 }
 #---------------------------------------------------------------------------------------#
 create_schema()
 {
-  SQL="CREATE DATABASE $DESTIN DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
+  SQL="CREATE DATABASE $SORTED DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
   echo $SQL
   RES=`mysql --login-path=local -NB -e "$SQL"`
   echo $RES
 }
 #---------------------------------------------------------------------------------------#
-move_sort_tables()
+sort_tables()
 {
   TABLE=$1
-  SQL="CREATE TABLE $DESTIN.$TABLE SELECT * FROM $SOURCE.$TABLE ORDER BY period DESC;"; echo "$SQL"
+  SQL="CREATE TABLE $SORTED.$TABLE SELECT * FROM $SOURCE.$TABLE ORDER BY period DESC;"; echo "$SQL"
   RES=`mysql --login-path=local -NB -e  "$SQL"`; echo "$RES"
 }
 #---------------------------------------------------------------------------------------#
-select_distinct_row()
+latest_entry()
 {
   TABLE=$1
-  SQL="INSERT INTO $FINAL1.$TABLE
+  SQL="INSERT LOW_PRIORITY INTO $FINAL1.$TABLE
           SELECT DISTINCT (sha256url)
-		      ,md5root
-		      ,url
-		      ,root
-		      ,tags
-		      ,title
-		      ,body
-		      ,alexa
-		      ,rank
-		      ,hit1
-		      ,hit2
-		      ,hit3
-		      ,category
-		      ,period
-		      ,gunning
-		      ,flesch
-		      ,kincaid
-		      ,sentence
-		      ,words
-		      ,syllables
-		      ,complex
- 	        FROM $DESTIN.$TABLE"
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM $SORTED.$TABLE
+            GROUP BY sha256url"
 
   echo "$SQL"; RES=`mysql --login-path=local -NB -e  "$SQL"`; echo "$RES"
 }
@@ -77,15 +69,12 @@ create_schema
         shard="$one$two$three"
         let "hex = 0x$shard"
         let "start = 0x$START"
-        if [ $hex -ge $start ]; then                                                                                                                                                                     
+        if [ $hex -ge $start ]; then    
           echo $hex " " $shard
           echo $shard > last.log
-          
-          # drop_table
-          move_sort_tables "part_$shard"
-
-          # truncate_table
-          select_distinct_row "part_$shard"
+    
+          sort_tables "part_$shard"
+          latest_entry "part_$shard"
         fi  
 
       done
@@ -93,4 +82,3 @@ create_schema
   done
 
 #---------------------------------------------------------------------------------------#
-
