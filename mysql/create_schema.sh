@@ -1,7 +1,6 @@
 #!/bin/bash
 #-----------------------------------------------------------------------------------#
-DB='engine79'
-SERVER='localhost'
+DB='engine83'
 #-----------------------------------------------------------------------------------#
 #                                 Drop Database
 #-----------------------------------------------------------------------------------#
@@ -9,14 +8,14 @@ recreate_database()
 {
   SQL="DROP DATABASE $DB;"
   echo $SQL
-  RES=`mysql -h $SERVER -u root -p$PASSWORD -NB -e "$SQL"`
+  RES=`mysql --login-path=local -NB -e "$SQL"`
   echo $RES 
   
   sleep 1 
 
   SQL="CREATE DATABASE $DB DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
   echo $SQL
-  RES=`mysql -h $SERVER -u root -p$PASSWORD -NB -e "$SQL"`
+  RES=`mysql --login-path=local -NB -e "$SQL"`
   echo $RES 
 }
 #-----------------------------------------------------------------------------------#
@@ -35,7 +34,7 @@ CREATE TABLE $DB.part_$1 (
 
   tags 		    varchar(128) 	DEFAULT NULL,
   title 	    varchar(128) 	DEFAULT NULL,
-  body 		    varchar(3072)   DEFAULT NULL,
+  body 		    varchar(4096)   DEFAULT NULL,
   alexa 	    mediumint(6) 	DEFAULT NULL,
   rank 		    mediumint(6) 	DEFAULT NULL,
   hit1 		    mediumint(6) 	DEFAULT NULL,
@@ -51,14 +50,15 @@ CREATE TABLE $DB.part_$1 (
   sentence      smallint(5)	    UNSIGNED NOT NULL DEFAULT '0',
   words 	    float(5,2) 	    UNSIGNED NOT NULL DEFAULT '0.00',
   syllables 	float(7,6) 	    UNSIGNED NOT NULL DEFAULT '0.000000',
-  complex     	float(4,2) 	    UNSIGNED NOT NULL DEFAULT '0.00'
+  complex     	float(4,2) 	    UNSIGNED NOT NULL DEFAULT '0.00',
+  PRIMARY KEY   (sha256url)
 
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 "
 
  # period DATETIME NOT NULL DEFAULT NOW()
  echo $SQL
- RES=`mysql -h $SERVER -u root -p$PASSWORD -NB -e "$SQL"`
+ RES=`mysql --login-path=local -NB -e "$SQL"`
  echo $RES 
 
 }

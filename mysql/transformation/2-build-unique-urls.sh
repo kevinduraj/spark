@@ -29,7 +29,8 @@ sort_tables()
 latest_entry()
 {
   TABLE=$1
-  SQL="INSERT LOW_PRIORITY INTO $FINAL1.$TABLE
+  SQL="SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO $FINAL1.$TABLE
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
