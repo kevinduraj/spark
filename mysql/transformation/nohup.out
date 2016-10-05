@@ -1,12 +1,10 @@
-CREATE DATABASE sorted DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-ERROR 1007 (HY000) at line 1: Can't create database 'sorted'; database exists
+CREATE DATABASE sorted1 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
-0   000
-CREATE TABLE sorted.part_000 SELECT * FROM engine82.part_000 ORDER BY period DESC;
-ERROR 1050 (42S01) at line 1: Table 'part_000' already exists
+1531   5fb
+CREATE TABLE sorted1.part_5fb SELECT * FROM engine82.part_5fb ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_000
+        INSERT LOW_PRIORITY INTO engine83.part_5fb
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -28,15 +26,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_000
+            FROM sorted1.part_5fb
             GROUP BY sha256url
 
-1   001
-CREATE TABLE sorted.part_001 SELECT * FROM engine82.part_001 ORDER BY period DESC;
-ERROR 1050 (42S01) at line 1: Table 'part_001' already exists
+1532   5fc
+CREATE TABLE sorted1.part_5fc SELECT * FROM engine82.part_5fc ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_001
+        INSERT LOW_PRIORITY INTO engine83.part_5fc
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -58,14 +55,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_001
+            FROM sorted1.part_5fc
             GROUP BY sha256url
 
-2   002
-CREATE TABLE sorted.part_002 SELECT * FROM engine82.part_002 ORDER BY period DESC;
+1533   5fd
+CREATE TABLE sorted1.part_5fd SELECT * FROM engine82.part_5fd ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_002
+        INSERT LOW_PRIORITY INTO engine83.part_5fd
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -87,14 +84,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_002
+            FROM sorted1.part_5fd
             GROUP BY sha256url
 
-3   003
-CREATE TABLE sorted.part_003 SELECT * FROM engine82.part_003 ORDER BY period DESC;
+1534   5fe
+CREATE TABLE sorted1.part_5fe SELECT * FROM engine82.part_5fe ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_003
+        INSERT LOW_PRIORITY INTO engine83.part_5fe
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -116,14 +113,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_003
+            FROM sorted1.part_5fe
             GROUP BY sha256url
 
-4   004
-CREATE TABLE sorted.part_004 SELECT * FROM engine82.part_004 ORDER BY period DESC;
+1535   5ff
+CREATE TABLE sorted1.part_5ff SELECT * FROM engine82.part_5ff ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_004
+        INSERT LOW_PRIORITY INTO engine83.part_5ff
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -145,14 +142,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_004
+            FROM sorted1.part_5ff
             GROUP BY sha256url
 
-5   005
-CREATE TABLE sorted.part_005 SELECT * FROM engine82.part_005 ORDER BY period DESC;
+1536   600
+CREATE TABLE sorted1.part_600 SELECT * FROM engine82.part_600 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_005
+        INSERT LOW_PRIORITY INTO engine83.part_600
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -174,14 +171,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_005
+            FROM sorted1.part_600
             GROUP BY sha256url
 
-6   006
-CREATE TABLE sorted.part_006 SELECT * FROM engine82.part_006 ORDER BY period DESC;
+1537   601
+CREATE TABLE sorted1.part_601 SELECT * FROM engine82.part_601 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_006
+        INSERT LOW_PRIORITY INTO engine83.part_601
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -203,14 +200,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_006
+            FROM sorted1.part_601
             GROUP BY sha256url
 
-7   007
-CREATE TABLE sorted.part_007 SELECT * FROM engine82.part_007 ORDER BY period DESC;
+1538   602
+CREATE TABLE sorted1.part_602 SELECT * FROM engine82.part_602 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_007
+        INSERT LOW_PRIORITY INTO engine83.part_602
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -232,14 +229,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_007
+            FROM sorted1.part_602
             GROUP BY sha256url
 
-8   008
-CREATE TABLE sorted.part_008 SELECT * FROM engine82.part_008 ORDER BY period DESC;
+1539   603
+CREATE TABLE sorted1.part_603 SELECT * FROM engine82.part_603 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_008
+        INSERT LOW_PRIORITY INTO engine83.part_603
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -261,14 +258,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_008
+            FROM sorted1.part_603
             GROUP BY sha256url
 
-9   009
-CREATE TABLE sorted.part_009 SELECT * FROM engine82.part_009 ORDER BY period DESC;
+1540   604
+CREATE TABLE sorted1.part_604 SELECT * FROM engine82.part_604 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_009
+        INSERT LOW_PRIORITY INTO engine83.part_604
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -290,14 +287,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_009
+            FROM sorted1.part_604
             GROUP BY sha256url
 
-10   00a
-CREATE TABLE sorted.part_00a SELECT * FROM engine82.part_00a ORDER BY period DESC;
+1541   605
+CREATE TABLE sorted1.part_605 SELECT * FROM engine82.part_605 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_00a
+        INSERT LOW_PRIORITY INTO engine83.part_605
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -319,14 +316,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_00a
+            FROM sorted1.part_605
             GROUP BY sha256url
 
-11   00b
-CREATE TABLE sorted.part_00b SELECT * FROM engine82.part_00b ORDER BY period DESC;
+1542   606
+CREATE TABLE sorted1.part_606 SELECT * FROM engine82.part_606 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_00b
+        INSERT LOW_PRIORITY INTO engine83.part_606
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -348,14 +345,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_00b
+            FROM sorted1.part_606
             GROUP BY sha256url
 
-12   00c
-CREATE TABLE sorted.part_00c SELECT * FROM engine82.part_00c ORDER BY period DESC;
+1543   607
+CREATE TABLE sorted1.part_607 SELECT * FROM engine82.part_607 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_00c
+        INSERT LOW_PRIORITY INTO engine83.part_607
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -377,14 +374,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_00c
+            FROM sorted1.part_607
             GROUP BY sha256url
 
-13   00d
-CREATE TABLE sorted.part_00d SELECT * FROM engine82.part_00d ORDER BY period DESC;
+1544   608
+CREATE TABLE sorted1.part_608 SELECT * FROM engine82.part_608 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_00d
+        INSERT LOW_PRIORITY INTO engine83.part_608
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -406,14 +403,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_00d
+            FROM sorted1.part_608
             GROUP BY sha256url
 
-14   00e
-CREATE TABLE sorted.part_00e SELECT * FROM engine82.part_00e ORDER BY period DESC;
+1545   609
+CREATE TABLE sorted1.part_609 SELECT * FROM engine82.part_609 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_00e
+        INSERT LOW_PRIORITY INTO engine83.part_609
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -435,14 +432,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_00e
+            FROM sorted1.part_609
             GROUP BY sha256url
 
-15   00f
-CREATE TABLE sorted.part_00f SELECT * FROM engine82.part_00f ORDER BY period DESC;
+1546   60a
+CREATE TABLE sorted1.part_60a SELECT * FROM engine82.part_60a ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_00f
+        INSERT LOW_PRIORITY INTO engine83.part_60a
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -464,14 +461,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_00f
+            FROM sorted1.part_60a
             GROUP BY sha256url
 
-16   010
-CREATE TABLE sorted.part_010 SELECT * FROM engine82.part_010 ORDER BY period DESC;
+1547   60b
+CREATE TABLE sorted1.part_60b SELECT * FROM engine82.part_60b ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_010
+        INSERT LOW_PRIORITY INTO engine83.part_60b
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -493,14 +490,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_010
+            FROM sorted1.part_60b
             GROUP BY sha256url
 
-17   011
-CREATE TABLE sorted.part_011 SELECT * FROM engine82.part_011 ORDER BY period DESC;
+1548   60c
+CREATE TABLE sorted1.part_60c SELECT * FROM engine82.part_60c ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_011
+        INSERT LOW_PRIORITY INTO engine83.part_60c
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -522,14 +519,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_011
+            FROM sorted1.part_60c
             GROUP BY sha256url
 
-18   012
-CREATE TABLE sorted.part_012 SELECT * FROM engine82.part_012 ORDER BY period DESC;
+1549   60d
+CREATE TABLE sorted1.part_60d SELECT * FROM engine82.part_60d ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_012
+        INSERT LOW_PRIORITY INTO engine83.part_60d
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -551,14 +548,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_012
+            FROM sorted1.part_60d
             GROUP BY sha256url
 
-19   013
-CREATE TABLE sorted.part_013 SELECT * FROM engine82.part_013 ORDER BY period DESC;
+1550   60e
+CREATE TABLE sorted1.part_60e SELECT * FROM engine82.part_60e ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_013
+        INSERT LOW_PRIORITY INTO engine83.part_60e
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -580,14 +577,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_013
+            FROM sorted1.part_60e
             GROUP BY sha256url
 
-20   014
-CREATE TABLE sorted.part_014 SELECT * FROM engine82.part_014 ORDER BY period DESC;
+1551   60f
+CREATE TABLE sorted1.part_60f SELECT * FROM engine82.part_60f ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_014
+        INSERT LOW_PRIORITY INTO engine83.part_60f
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -609,14 +606,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_014
+            FROM sorted1.part_60f
             GROUP BY sha256url
 
-21   015
-CREATE TABLE sorted.part_015 SELECT * FROM engine82.part_015 ORDER BY period DESC;
+1552   610
+CREATE TABLE sorted1.part_610 SELECT * FROM engine82.part_610 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_015
+        INSERT LOW_PRIORITY INTO engine83.part_610
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -638,14 +635,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_015
+            FROM sorted1.part_610
             GROUP BY sha256url
 
-22   016
-CREATE TABLE sorted.part_016 SELECT * FROM engine82.part_016 ORDER BY period DESC;
+1553   611
+CREATE TABLE sorted1.part_611 SELECT * FROM engine82.part_611 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_016
+        INSERT LOW_PRIORITY INTO engine83.part_611
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -667,14 +664,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_016
+            FROM sorted1.part_611
             GROUP BY sha256url
 
-23   017
-CREATE TABLE sorted.part_017 SELECT * FROM engine82.part_017 ORDER BY period DESC;
+1554   612
+CREATE TABLE sorted1.part_612 SELECT * FROM engine82.part_612 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_017
+        INSERT LOW_PRIORITY INTO engine83.part_612
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -696,14 +693,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_017
+            FROM sorted1.part_612
             GROUP BY sha256url
 
-24   018
-CREATE TABLE sorted.part_018 SELECT * FROM engine82.part_018 ORDER BY period DESC;
+1555   613
+CREATE TABLE sorted1.part_613 SELECT * FROM engine82.part_613 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_018
+        INSERT LOW_PRIORITY INTO engine83.part_613
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -725,14 +722,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_018
+            FROM sorted1.part_613
             GROUP BY sha256url
 
-25   019
-CREATE TABLE sorted.part_019 SELECT * FROM engine82.part_019 ORDER BY period DESC;
+1556   614
+CREATE TABLE sorted1.part_614 SELECT * FROM engine82.part_614 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_019
+        INSERT LOW_PRIORITY INTO engine83.part_614
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -754,14 +751,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_019
+            FROM sorted1.part_614
             GROUP BY sha256url
 
-26   01a
-CREATE TABLE sorted.part_01a SELECT * FROM engine82.part_01a ORDER BY period DESC;
+1557   615
+CREATE TABLE sorted1.part_615 SELECT * FROM engine82.part_615 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_01a
+        INSERT LOW_PRIORITY INTO engine83.part_615
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -783,14 +780,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_01a
+            FROM sorted1.part_615
             GROUP BY sha256url
 
-27   01b
-CREATE TABLE sorted.part_01b SELECT * FROM engine82.part_01b ORDER BY period DESC;
+1558   616
+CREATE TABLE sorted1.part_616 SELECT * FROM engine82.part_616 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_01b
+        INSERT LOW_PRIORITY INTO engine83.part_616
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -812,14 +809,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_01b
+            FROM sorted1.part_616
             GROUP BY sha256url
 
-28   01c
-CREATE TABLE sorted.part_01c SELECT * FROM engine82.part_01c ORDER BY period DESC;
+1559   617
+CREATE TABLE sorted1.part_617 SELECT * FROM engine82.part_617 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_01c
+        INSERT LOW_PRIORITY INTO engine83.part_617
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -841,14 +838,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_01c
+            FROM sorted1.part_617
             GROUP BY sha256url
 
-29   01d
-CREATE TABLE sorted.part_01d SELECT * FROM engine82.part_01d ORDER BY period DESC;
+1560   618
+CREATE TABLE sorted1.part_618 SELECT * FROM engine82.part_618 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_01d
+        INSERT LOW_PRIORITY INTO engine83.part_618
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -870,14 +867,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_01d
+            FROM sorted1.part_618
             GROUP BY sha256url
 
-30   01e
-CREATE TABLE sorted.part_01e SELECT * FROM engine82.part_01e ORDER BY period DESC;
+1561   619
+CREATE TABLE sorted1.part_619 SELECT * FROM engine82.part_619 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_01e
+        INSERT LOW_PRIORITY INTO engine83.part_619
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -899,14 +896,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_01e
+            FROM sorted1.part_619
             GROUP BY sha256url
 
-31   01f
-CREATE TABLE sorted.part_01f SELECT * FROM engine82.part_01f ORDER BY period DESC;
+1562   61a
+CREATE TABLE sorted1.part_61a SELECT * FROM engine82.part_61a ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_01f
+        INSERT LOW_PRIORITY INTO engine83.part_61a
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -928,14 +925,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_01f
+            FROM sorted1.part_61a
             GROUP BY sha256url
 
-32   020
-CREATE TABLE sorted.part_020 SELECT * FROM engine82.part_020 ORDER BY period DESC;
+1563   61b
+CREATE TABLE sorted1.part_61b SELECT * FROM engine82.part_61b ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_020
+        INSERT LOW_PRIORITY INTO engine83.part_61b
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -957,14 +954,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_020
+            FROM sorted1.part_61b
             GROUP BY sha256url
 
-33   021
-CREATE TABLE sorted.part_021 SELECT * FROM engine82.part_021 ORDER BY period DESC;
+1564   61c
+CREATE TABLE sorted1.part_61c SELECT * FROM engine82.part_61c ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_021
+        INSERT LOW_PRIORITY INTO engine83.part_61c
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -986,14 +983,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_021
+            FROM sorted1.part_61c
             GROUP BY sha256url
 
-34   022
-CREATE TABLE sorted.part_022 SELECT * FROM engine82.part_022 ORDER BY period DESC;
+1565   61d
+CREATE TABLE sorted1.part_61d SELECT * FROM engine82.part_61d ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_022
+        INSERT LOW_PRIORITY INTO engine83.part_61d
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1015,14 +1012,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_022
+            FROM sorted1.part_61d
             GROUP BY sha256url
 
-35   023
-CREATE TABLE sorted.part_023 SELECT * FROM engine82.part_023 ORDER BY period DESC;
+1566   61e
+CREATE TABLE sorted1.part_61e SELECT * FROM engine82.part_61e ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_023
+        INSERT LOW_PRIORITY INTO engine83.part_61e
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1044,14 +1041,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_023
+            FROM sorted1.part_61e
             GROUP BY sha256url
 
-36   024
-CREATE TABLE sorted.part_024 SELECT * FROM engine82.part_024 ORDER BY period DESC;
+1567   61f
+CREATE TABLE sorted1.part_61f SELECT * FROM engine82.part_61f ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_024
+        INSERT LOW_PRIORITY INTO engine83.part_61f
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1073,14 +1070,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_024
+            FROM sorted1.part_61f
             GROUP BY sha256url
 
-37   025
-CREATE TABLE sorted.part_025 SELECT * FROM engine82.part_025 ORDER BY period DESC;
+1568   620
+CREATE TABLE sorted1.part_620 SELECT * FROM engine82.part_620 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_025
+        INSERT LOW_PRIORITY INTO engine83.part_620
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1102,14 +1099,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_025
+            FROM sorted1.part_620
             GROUP BY sha256url
 
-38   026
-CREATE TABLE sorted.part_026 SELECT * FROM engine82.part_026 ORDER BY period DESC;
+1569   621
+CREATE TABLE sorted1.part_621 SELECT * FROM engine82.part_621 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_026
+        INSERT LOW_PRIORITY INTO engine83.part_621
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1131,14 +1128,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_026
+            FROM sorted1.part_621
             GROUP BY sha256url
 
-39   027
-CREATE TABLE sorted.part_027 SELECT * FROM engine82.part_027 ORDER BY period DESC;
+1570   622
+CREATE TABLE sorted1.part_622 SELECT * FROM engine82.part_622 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_027
+        INSERT LOW_PRIORITY INTO engine83.part_622
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1160,14 +1157,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_027
+            FROM sorted1.part_622
             GROUP BY sha256url
 
-40   028
-CREATE TABLE sorted.part_028 SELECT * FROM engine82.part_028 ORDER BY period DESC;
+1571   623
+CREATE TABLE sorted1.part_623 SELECT * FROM engine82.part_623 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_028
+        INSERT LOW_PRIORITY INTO engine83.part_623
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1189,14 +1186,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_028
+            FROM sorted1.part_623
             GROUP BY sha256url
 
-41   029
-CREATE TABLE sorted.part_029 SELECT * FROM engine82.part_029 ORDER BY period DESC;
+1572   624
+CREATE TABLE sorted1.part_624 SELECT * FROM engine82.part_624 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_029
+        INSERT LOW_PRIORITY INTO engine83.part_624
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1218,14 +1215,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_029
+            FROM sorted1.part_624
             GROUP BY sha256url
 
-42   02a
-CREATE TABLE sorted.part_02a SELECT * FROM engine82.part_02a ORDER BY period DESC;
+1573   625
+CREATE TABLE sorted1.part_625 SELECT * FROM engine82.part_625 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_02a
+        INSERT LOW_PRIORITY INTO engine83.part_625
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1247,14 +1244,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_02a
+            FROM sorted1.part_625
             GROUP BY sha256url
 
-43   02b
-CREATE TABLE sorted.part_02b SELECT * FROM engine82.part_02b ORDER BY period DESC;
+1574   626
+CREATE TABLE sorted1.part_626 SELECT * FROM engine82.part_626 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_02b
+        INSERT LOW_PRIORITY INTO engine83.part_626
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1276,14 +1273,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_02b
+            FROM sorted1.part_626
             GROUP BY sha256url
 
-44   02c
-CREATE TABLE sorted.part_02c SELECT * FROM engine82.part_02c ORDER BY period DESC;
+1575   627
+CREATE TABLE sorted1.part_627 SELECT * FROM engine82.part_627 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_02c
+        INSERT LOW_PRIORITY INTO engine83.part_627
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1305,14 +1302,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_02c
+            FROM sorted1.part_627
             GROUP BY sha256url
 
-45   02d
-CREATE TABLE sorted.part_02d SELECT * FROM engine82.part_02d ORDER BY period DESC;
+1576   628
+CREATE TABLE sorted1.part_628 SELECT * FROM engine82.part_628 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_02d
+        INSERT LOW_PRIORITY INTO engine83.part_628
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1334,14 +1331,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_02d
+            FROM sorted1.part_628
             GROUP BY sha256url
 
-46   02e
-CREATE TABLE sorted.part_02e SELECT * FROM engine82.part_02e ORDER BY period DESC;
+1577   629
+CREATE TABLE sorted1.part_629 SELECT * FROM engine82.part_629 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_02e
+        INSERT LOW_PRIORITY INTO engine83.part_629
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1363,14 +1360,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_02e
+            FROM sorted1.part_629
             GROUP BY sha256url
 
-47   02f
-CREATE TABLE sorted.part_02f SELECT * FROM engine82.part_02f ORDER BY period DESC;
+1578   62a
+CREATE TABLE sorted1.part_62a SELECT * FROM engine82.part_62a ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_02f
+        INSERT LOW_PRIORITY INTO engine83.part_62a
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1392,14 +1389,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_02f
+            FROM sorted1.part_62a
             GROUP BY sha256url
 
-48   030
-CREATE TABLE sorted.part_030 SELECT * FROM engine82.part_030 ORDER BY period DESC;
+1579   62b
+CREATE TABLE sorted1.part_62b SELECT * FROM engine82.part_62b ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_030
+        INSERT LOW_PRIORITY INTO engine83.part_62b
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1421,14 +1418,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_030
+            FROM sorted1.part_62b
             GROUP BY sha256url
 
-49   031
-CREATE TABLE sorted.part_031 SELECT * FROM engine82.part_031 ORDER BY period DESC;
+1580   62c
+CREATE TABLE sorted1.part_62c SELECT * FROM engine82.part_62c ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_031
+        INSERT LOW_PRIORITY INTO engine83.part_62c
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1450,14 +1447,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_031
+            FROM sorted1.part_62c
             GROUP BY sha256url
 
-50   032
-CREATE TABLE sorted.part_032 SELECT * FROM engine82.part_032 ORDER BY period DESC;
+1581   62d
+CREATE TABLE sorted1.part_62d SELECT * FROM engine82.part_62d ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_032
+        INSERT LOW_PRIORITY INTO engine83.part_62d
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1479,14 +1476,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_032
+            FROM sorted1.part_62d
             GROUP BY sha256url
 
-51   033
-CREATE TABLE sorted.part_033 SELECT * FROM engine82.part_033 ORDER BY period DESC;
+1582   62e
+CREATE TABLE sorted1.part_62e SELECT * FROM engine82.part_62e ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_033
+        INSERT LOW_PRIORITY INTO engine83.part_62e
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1508,14 +1505,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_033
+            FROM sorted1.part_62e
             GROUP BY sha256url
 
-52   034
-CREATE TABLE sorted.part_034 SELECT * FROM engine82.part_034 ORDER BY period DESC;
+1583   62f
+CREATE TABLE sorted1.part_62f SELECT * FROM engine82.part_62f ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_034
+        INSERT LOW_PRIORITY INTO engine83.part_62f
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1537,14 +1534,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_034
+            FROM sorted1.part_62f
             GROUP BY sha256url
 
-53   035
-CREATE TABLE sorted.part_035 SELECT * FROM engine82.part_035 ORDER BY period DESC;
+1584   630
+CREATE TABLE sorted1.part_630 SELECT * FROM engine82.part_630 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_035
+        INSERT LOW_PRIORITY INTO engine83.part_630
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1566,14 +1563,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_035
+            FROM sorted1.part_630
             GROUP BY sha256url
 
-54   036
-CREATE TABLE sorted.part_036 SELECT * FROM engine82.part_036 ORDER BY period DESC;
+1585   631
+CREATE TABLE sorted1.part_631 SELECT * FROM engine82.part_631 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_036
+        INSERT LOW_PRIORITY INTO engine83.part_631
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1595,14 +1592,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_036
+            FROM sorted1.part_631
             GROUP BY sha256url
 
-55   037
-CREATE TABLE sorted.part_037 SELECT * FROM engine82.part_037 ORDER BY period DESC;
+1586   632
+CREATE TABLE sorted1.part_632 SELECT * FROM engine82.part_632 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_037
+        INSERT LOW_PRIORITY INTO engine83.part_632
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1624,14 +1621,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_037
+            FROM sorted1.part_632
             GROUP BY sha256url
 
-56   038
-CREATE TABLE sorted.part_038 SELECT * FROM engine82.part_038 ORDER BY period DESC;
+1587   633
+CREATE TABLE sorted1.part_633 SELECT * FROM engine82.part_633 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_038
+        INSERT LOW_PRIORITY INTO engine83.part_633
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1653,14 +1650,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_038
+            FROM sorted1.part_633
             GROUP BY sha256url
 
-57   039
-CREATE TABLE sorted.part_039 SELECT * FROM engine82.part_039 ORDER BY period DESC;
+1588   634
+CREATE TABLE sorted1.part_634 SELECT * FROM engine82.part_634 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_039
+        INSERT LOW_PRIORITY INTO engine83.part_634
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1682,14 +1679,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_039
+            FROM sorted1.part_634
             GROUP BY sha256url
 
-58   03a
-CREATE TABLE sorted.part_03a SELECT * FROM engine82.part_03a ORDER BY period DESC;
+1589   635
+CREATE TABLE sorted1.part_635 SELECT * FROM engine82.part_635 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_03a
+        INSERT LOW_PRIORITY INTO engine83.part_635
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1711,14 +1708,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_03a
+            FROM sorted1.part_635
             GROUP BY sha256url
 
-59   03b
-CREATE TABLE sorted.part_03b SELECT * FROM engine82.part_03b ORDER BY period DESC;
+1590   636
+CREATE TABLE sorted1.part_636 SELECT * FROM engine82.part_636 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_03b
+        INSERT LOW_PRIORITY INTO engine83.part_636
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1740,14 +1737,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_03b
+            FROM sorted1.part_636
             GROUP BY sha256url
 
-60   03c
-CREATE TABLE sorted.part_03c SELECT * FROM engine82.part_03c ORDER BY period DESC;
+1591   637
+CREATE TABLE sorted1.part_637 SELECT * FROM engine82.part_637 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_03c
+        INSERT LOW_PRIORITY INTO engine83.part_637
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1769,14 +1766,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_03c
+            FROM sorted1.part_637
             GROUP BY sha256url
 
-61   03d
-CREATE TABLE sorted.part_03d SELECT * FROM engine82.part_03d ORDER BY period DESC;
+1592   638
+CREATE TABLE sorted1.part_638 SELECT * FROM engine82.part_638 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_03d
+        INSERT LOW_PRIORITY INTO engine83.part_638
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1798,14 +1795,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_03d
+            FROM sorted1.part_638
             GROUP BY sha256url
 
-62   03e
-CREATE TABLE sorted.part_03e SELECT * FROM engine82.part_03e ORDER BY period DESC;
+1593   639
+CREATE TABLE sorted1.part_639 SELECT * FROM engine82.part_639 ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_03e
+        INSERT LOW_PRIORITY INTO engine83.part_639
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1827,14 +1824,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_03e
+            FROM sorted1.part_639
             GROUP BY sha256url
 
-63   03f
-CREATE TABLE sorted.part_03f SELECT * FROM engine82.part_03f ORDER BY period DESC;
+1594   63a
+CREATE TABLE sorted1.part_63a SELECT * FROM engine82.part_63a ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_03f
+        INSERT LOW_PRIORITY INTO engine83.part_63a
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1856,14 +1853,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_03f
+            FROM sorted1.part_63a
             GROUP BY sha256url
 
-64   040
-CREATE TABLE sorted.part_040 SELECT * FROM engine82.part_040 ORDER BY period DESC;
+1595   63b
+CREATE TABLE sorted1.part_63b SELECT * FROM engine82.part_63b ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_040
+        INSERT LOW_PRIORITY INTO engine83.part_63b
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1885,14 +1882,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_040
+            FROM sorted1.part_63b
             GROUP BY sha256url
 
-65   041
-CREATE TABLE sorted.part_041 SELECT * FROM engine82.part_041 ORDER BY period DESC;
+1596   63c
+CREATE TABLE sorted1.part_63c SELECT * FROM engine82.part_63c ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_041
+        INSERT LOW_PRIORITY INTO engine83.part_63c
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1914,14 +1911,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_041
+            FROM sorted1.part_63c
             GROUP BY sha256url
 
-66   042
-CREATE TABLE sorted.part_042 SELECT * FROM engine82.part_042 ORDER BY period DESC;
+1597   63d
+CREATE TABLE sorted1.part_63d SELECT * FROM engine82.part_63d ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_042
+        INSERT LOW_PRIORITY INTO engine83.part_63d
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1943,14 +1940,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_042
+            FROM sorted1.part_63d
             GROUP BY sha256url
 
-67   043
-CREATE TABLE sorted.part_043 SELECT * FROM engine82.part_043 ORDER BY period DESC;
+1598   63e
+CREATE TABLE sorted1.part_63e SELECT * FROM engine82.part_63e ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_043
+        INSERT LOW_PRIORITY INTO engine83.part_63e
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -1972,14 +1969,14 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_043
+            FROM sorted1.part_63e
             GROUP BY sha256url
 
-68   044
-CREATE TABLE sorted.part_044 SELECT * FROM engine82.part_044 ORDER BY period DESC;
+1599   63f
+CREATE TABLE sorted1.part_63f SELECT * FROM engine82.part_63f ORDER BY period DESC;
 
 SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO engine83.part_044
+        INSERT LOW_PRIORITY INTO engine83.part_63f
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
@@ -2001,5 +1998,4036 @@ SET sql_mode = '';
               ,AVG(words)
               ,AVG(syllables)
               ,AVG(complex)
-            FROM sorted.part_044
+            FROM sorted1.part_63f
+            GROUP BY sha256url
+
+1600   640
+CREATE TABLE sorted1.part_640 SELECT * FROM engine82.part_640 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_640
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_640
+            GROUP BY sha256url
+
+1601   641
+CREATE TABLE sorted1.part_641 SELECT * FROM engine82.part_641 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_641
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_641
+            GROUP BY sha256url
+
+1602   642
+CREATE TABLE sorted1.part_642 SELECT * FROM engine82.part_642 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_642
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_642
+            GROUP BY sha256url
+
+1603   643
+CREATE TABLE sorted1.part_643 SELECT * FROM engine82.part_643 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_643
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_643
+            GROUP BY sha256url
+
+1604   644
+CREATE TABLE sorted1.part_644 SELECT * FROM engine82.part_644 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_644
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_644
+            GROUP BY sha256url
+
+1605   645
+CREATE TABLE sorted1.part_645 SELECT * FROM engine82.part_645 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_645
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_645
+            GROUP BY sha256url
+
+1606   646
+CREATE TABLE sorted1.part_646 SELECT * FROM engine82.part_646 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_646
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_646
+            GROUP BY sha256url
+
+1607   647
+CREATE TABLE sorted1.part_647 SELECT * FROM engine82.part_647 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_647
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_647
+            GROUP BY sha256url
+
+1608   648
+CREATE TABLE sorted1.part_648 SELECT * FROM engine82.part_648 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_648
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_648
+            GROUP BY sha256url
+
+1609   649
+CREATE TABLE sorted1.part_649 SELECT * FROM engine82.part_649 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_649
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_649
+            GROUP BY sha256url
+
+1610   64a
+CREATE TABLE sorted1.part_64a SELECT * FROM engine82.part_64a ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_64a
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_64a
+            GROUP BY sha256url
+
+1611   64b
+CREATE TABLE sorted1.part_64b SELECT * FROM engine82.part_64b ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_64b
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_64b
+            GROUP BY sha256url
+
+1612   64c
+CREATE TABLE sorted1.part_64c SELECT * FROM engine82.part_64c ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_64c
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_64c
+            GROUP BY sha256url
+
+1613   64d
+CREATE TABLE sorted1.part_64d SELECT * FROM engine82.part_64d ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_64d
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_64d
+            GROUP BY sha256url
+
+1614   64e
+CREATE TABLE sorted1.part_64e SELECT * FROM engine82.part_64e ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_64e
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_64e
+            GROUP BY sha256url
+
+1615   64f
+CREATE TABLE sorted1.part_64f SELECT * FROM engine82.part_64f ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_64f
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_64f
+            GROUP BY sha256url
+
+1616   650
+CREATE TABLE sorted1.part_650 SELECT * FROM engine82.part_650 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_650
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_650
+            GROUP BY sha256url
+
+1617   651
+CREATE TABLE sorted1.part_651 SELECT * FROM engine82.part_651 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_651
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_651
+            GROUP BY sha256url
+
+1618   652
+CREATE TABLE sorted1.part_652 SELECT * FROM engine82.part_652 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_652
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_652
+            GROUP BY sha256url
+
+1619   653
+CREATE TABLE sorted1.part_653 SELECT * FROM engine82.part_653 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_653
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_653
+            GROUP BY sha256url
+
+1620   654
+CREATE TABLE sorted1.part_654 SELECT * FROM engine82.part_654 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_654
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_654
+            GROUP BY sha256url
+
+1621   655
+CREATE TABLE sorted1.part_655 SELECT * FROM engine82.part_655 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_655
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_655
+            GROUP BY sha256url
+
+1622   656
+CREATE TABLE sorted1.part_656 SELECT * FROM engine82.part_656 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_656
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_656
+            GROUP BY sha256url
+
+1623   657
+CREATE TABLE sorted1.part_657 SELECT * FROM engine82.part_657 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_657
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_657
+            GROUP BY sha256url
+
+1624   658
+CREATE TABLE sorted1.part_658 SELECT * FROM engine82.part_658 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_658
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_658
+            GROUP BY sha256url
+
+1625   659
+CREATE TABLE sorted1.part_659 SELECT * FROM engine82.part_659 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_659
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_659
+            GROUP BY sha256url
+
+1626   65a
+CREATE TABLE sorted1.part_65a SELECT * FROM engine82.part_65a ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_65a
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_65a
+            GROUP BY sha256url
+
+1627   65b
+CREATE TABLE sorted1.part_65b SELECT * FROM engine82.part_65b ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_65b
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_65b
+            GROUP BY sha256url
+
+1628   65c
+CREATE TABLE sorted1.part_65c SELECT * FROM engine82.part_65c ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_65c
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_65c
+            GROUP BY sha256url
+
+1629   65d
+CREATE TABLE sorted1.part_65d SELECT * FROM engine82.part_65d ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_65d
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_65d
+            GROUP BY sha256url
+
+1630   65e
+CREATE TABLE sorted1.part_65e SELECT * FROM engine82.part_65e ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_65e
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_65e
+            GROUP BY sha256url
+
+1631   65f
+CREATE TABLE sorted1.part_65f SELECT * FROM engine82.part_65f ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_65f
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_65f
+            GROUP BY sha256url
+
+1632   660
+CREATE TABLE sorted1.part_660 SELECT * FROM engine82.part_660 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_660
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_660
+            GROUP BY sha256url
+
+1633   661
+CREATE TABLE sorted1.part_661 SELECT * FROM engine82.part_661 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_661
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_661
+            GROUP BY sha256url
+
+1634   662
+CREATE TABLE sorted1.part_662 SELECT * FROM engine82.part_662 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_662
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_662
+            GROUP BY sha256url
+
+1635   663
+CREATE TABLE sorted1.part_663 SELECT * FROM engine82.part_663 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_663
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_663
+            GROUP BY sha256url
+
+1636   664
+CREATE TABLE sorted1.part_664 SELECT * FROM engine82.part_664 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_664
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_664
+            GROUP BY sha256url
+
+1637   665
+CREATE TABLE sorted1.part_665 SELECT * FROM engine82.part_665 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_665
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_665
+            GROUP BY sha256url
+
+1638   666
+CREATE TABLE sorted1.part_666 SELECT * FROM engine82.part_666 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_666
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_666
+            GROUP BY sha256url
+
+1639   667
+CREATE TABLE sorted1.part_667 SELECT * FROM engine82.part_667 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_667
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_667
+            GROUP BY sha256url
+
+1640   668
+CREATE TABLE sorted1.part_668 SELECT * FROM engine82.part_668 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_668
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_668
+            GROUP BY sha256url
+
+1641   669
+CREATE TABLE sorted1.part_669 SELECT * FROM engine82.part_669 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_669
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_669
+            GROUP BY sha256url
+
+1642   66a
+CREATE TABLE sorted1.part_66a SELECT * FROM engine82.part_66a ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_66a
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_66a
+            GROUP BY sha256url
+
+1643   66b
+CREATE TABLE sorted1.part_66b SELECT * FROM engine82.part_66b ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_66b
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_66b
+            GROUP BY sha256url
+
+1644   66c
+CREATE TABLE sorted1.part_66c SELECT * FROM engine82.part_66c ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_66c
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_66c
+            GROUP BY sha256url
+
+1645   66d
+CREATE TABLE sorted1.part_66d SELECT * FROM engine82.part_66d ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_66d
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_66d
+            GROUP BY sha256url
+
+1646   66e
+CREATE TABLE sorted1.part_66e SELECT * FROM engine82.part_66e ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_66e
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_66e
+            GROUP BY sha256url
+
+1647   66f
+CREATE TABLE sorted1.part_66f SELECT * FROM engine82.part_66f ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_66f
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_66f
+            GROUP BY sha256url
+
+1648   670
+CREATE TABLE sorted1.part_670 SELECT * FROM engine82.part_670 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_670
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_670
+            GROUP BY sha256url
+
+1649   671
+CREATE TABLE sorted1.part_671 SELECT * FROM engine82.part_671 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_671
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_671
+            GROUP BY sha256url
+
+1650   672
+CREATE TABLE sorted1.part_672 SELECT * FROM engine82.part_672 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_672
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_672
+            GROUP BY sha256url
+
+1651   673
+CREATE TABLE sorted1.part_673 SELECT * FROM engine82.part_673 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_673
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_673
+            GROUP BY sha256url
+
+1652   674
+CREATE TABLE sorted1.part_674 SELECT * FROM engine82.part_674 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_674
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_674
+            GROUP BY sha256url
+
+1653   675
+CREATE TABLE sorted1.part_675 SELECT * FROM engine82.part_675 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_675
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_675
+            GROUP BY sha256url
+
+1654   676
+CREATE TABLE sorted1.part_676 SELECT * FROM engine82.part_676 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_676
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_676
+            GROUP BY sha256url
+
+1655   677
+CREATE TABLE sorted1.part_677 SELECT * FROM engine82.part_677 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_677
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_677
+            GROUP BY sha256url
+
+1656   678
+CREATE TABLE sorted1.part_678 SELECT * FROM engine82.part_678 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_678
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_678
+            GROUP BY sha256url
+
+1657   679
+CREATE TABLE sorted1.part_679 SELECT * FROM engine82.part_679 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_679
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_679
+            GROUP BY sha256url
+
+1658   67a
+CREATE TABLE sorted1.part_67a SELECT * FROM engine82.part_67a ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_67a
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_67a
+            GROUP BY sha256url
+
+1659   67b
+CREATE TABLE sorted1.part_67b SELECT * FROM engine82.part_67b ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_67b
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_67b
+            GROUP BY sha256url
+
+1660   67c
+CREATE TABLE sorted1.part_67c SELECT * FROM engine82.part_67c ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_67c
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_67c
+            GROUP BY sha256url
+
+1661   67d
+CREATE TABLE sorted1.part_67d SELECT * FROM engine82.part_67d ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_67d
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_67d
+            GROUP BY sha256url
+
+1662   67e
+CREATE TABLE sorted1.part_67e SELECT * FROM engine82.part_67e ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_67e
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_67e
+            GROUP BY sha256url
+
+1663   67f
+CREATE TABLE sorted1.part_67f SELECT * FROM engine82.part_67f ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_67f
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_67f
+            GROUP BY sha256url
+
+1664   680
+CREATE TABLE sorted1.part_680 SELECT * FROM engine82.part_680 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_680
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_680
+            GROUP BY sha256url
+
+1665   681
+CREATE TABLE sorted1.part_681 SELECT * FROM engine82.part_681 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_681
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_681
+            GROUP BY sha256url
+
+1666   682
+CREATE TABLE sorted1.part_682 SELECT * FROM engine82.part_682 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_682
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_682
+            GROUP BY sha256url
+
+1667   683
+CREATE TABLE sorted1.part_683 SELECT * FROM engine82.part_683 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_683
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_683
+            GROUP BY sha256url
+
+1668   684
+CREATE TABLE sorted1.part_684 SELECT * FROM engine82.part_684 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_684
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_684
+            GROUP BY sha256url
+
+1669   685
+CREATE TABLE sorted1.part_685 SELECT * FROM engine82.part_685 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_685
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_685
+            GROUP BY sha256url
+
+1670   686
+CREATE TABLE sorted1.part_686 SELECT * FROM engine82.part_686 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_686
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_686
+            GROUP BY sha256url
+
+1671   687
+CREATE TABLE sorted1.part_687 SELECT * FROM engine82.part_687 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_687
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_687
+            GROUP BY sha256url
+
+1672   688
+CREATE TABLE sorted1.part_688 SELECT * FROM engine82.part_688 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_688
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_688
+            GROUP BY sha256url
+
+1673   689
+CREATE TABLE sorted1.part_689 SELECT * FROM engine82.part_689 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_689
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_689
+            GROUP BY sha256url
+
+1674   68a
+CREATE TABLE sorted1.part_68a SELECT * FROM engine82.part_68a ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_68a
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_68a
+            GROUP BY sha256url
+
+1675   68b
+CREATE TABLE sorted1.part_68b SELECT * FROM engine82.part_68b ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_68b
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_68b
+            GROUP BY sha256url
+
+1676   68c
+CREATE TABLE sorted1.part_68c SELECT * FROM engine82.part_68c ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_68c
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_68c
+            GROUP BY sha256url
+
+1677   68d
+CREATE TABLE sorted1.part_68d SELECT * FROM engine82.part_68d ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_68d
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_68d
+            GROUP BY sha256url
+
+1678   68e
+CREATE TABLE sorted1.part_68e SELECT * FROM engine82.part_68e ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_68e
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_68e
+            GROUP BY sha256url
+
+1679   68f
+CREATE TABLE sorted1.part_68f SELECT * FROM engine82.part_68f ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_68f
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_68f
+            GROUP BY sha256url
+
+1680   690
+CREATE TABLE sorted1.part_690 SELECT * FROM engine82.part_690 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_690
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_690
+            GROUP BY sha256url
+
+1681   691
+CREATE TABLE sorted1.part_691 SELECT * FROM engine82.part_691 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_691
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_691
+            GROUP BY sha256url
+
+1682   692
+CREATE TABLE sorted1.part_692 SELECT * FROM engine82.part_692 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_692
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_692
+            GROUP BY sha256url
+
+1683   693
+CREATE TABLE sorted1.part_693 SELECT * FROM engine82.part_693 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_693
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_693
+            GROUP BY sha256url
+
+1684   694
+CREATE TABLE sorted1.part_694 SELECT * FROM engine82.part_694 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_694
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_694
+            GROUP BY sha256url
+
+1685   695
+CREATE TABLE sorted1.part_695 SELECT * FROM engine82.part_695 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_695
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_695
+            GROUP BY sha256url
+
+1686   696
+CREATE TABLE sorted1.part_696 SELECT * FROM engine82.part_696 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_696
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_696
+            GROUP BY sha256url
+
+1687   697
+CREATE TABLE sorted1.part_697 SELECT * FROM engine82.part_697 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_697
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_697
+            GROUP BY sha256url
+
+1688   698
+CREATE TABLE sorted1.part_698 SELECT * FROM engine82.part_698 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_698
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_698
+            GROUP BY sha256url
+
+1689   699
+CREATE TABLE sorted1.part_699 SELECT * FROM engine82.part_699 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_699
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_699
+            GROUP BY sha256url
+
+1690   69a
+CREATE TABLE sorted1.part_69a SELECT * FROM engine82.part_69a ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_69a
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_69a
+            GROUP BY sha256url
+
+1691   69b
+CREATE TABLE sorted1.part_69b SELECT * FROM engine82.part_69b ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_69b
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_69b
+            GROUP BY sha256url
+
+1692   69c
+CREATE TABLE sorted1.part_69c SELECT * FROM engine82.part_69c ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_69c
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_69c
+            GROUP BY sha256url
+
+1693   69d
+CREATE TABLE sorted1.part_69d SELECT * FROM engine82.part_69d ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_69d
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_69d
+            GROUP BY sha256url
+
+1694   69e
+CREATE TABLE sorted1.part_69e SELECT * FROM engine82.part_69e ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_69e
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_69e
+            GROUP BY sha256url
+
+1695   69f
+CREATE TABLE sorted1.part_69f SELECT * FROM engine82.part_69f ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_69f
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_69f
+            GROUP BY sha256url
+
+1696   6a0
+CREATE TABLE sorted1.part_6a0 SELECT * FROM engine82.part_6a0 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6a0
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6a0
+            GROUP BY sha256url
+
+1697   6a1
+CREATE TABLE sorted1.part_6a1 SELECT * FROM engine82.part_6a1 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6a1
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6a1
+            GROUP BY sha256url
+
+1698   6a2
+CREATE TABLE sorted1.part_6a2 SELECT * FROM engine82.part_6a2 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6a2
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6a2
+            GROUP BY sha256url
+
+1699   6a3
+CREATE TABLE sorted1.part_6a3 SELECT * FROM engine82.part_6a3 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6a3
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6a3
+            GROUP BY sha256url
+
+1700   6a4
+CREATE TABLE sorted1.part_6a4 SELECT * FROM engine82.part_6a4 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6a4
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6a4
+            GROUP BY sha256url
+
+1701   6a5
+CREATE TABLE sorted1.part_6a5 SELECT * FROM engine82.part_6a5 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6a5
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6a5
+            GROUP BY sha256url
+
+1702   6a6
+CREATE TABLE sorted1.part_6a6 SELECT * FROM engine82.part_6a6 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6a6
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6a6
+            GROUP BY sha256url
+
+1703   6a7
+CREATE TABLE sorted1.part_6a7 SELECT * FROM engine82.part_6a7 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6a7
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6a7
+            GROUP BY sha256url
+
+1704   6a8
+CREATE TABLE sorted1.part_6a8 SELECT * FROM engine82.part_6a8 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6a8
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6a8
+            GROUP BY sha256url
+
+1705   6a9
+CREATE TABLE sorted1.part_6a9 SELECT * FROM engine82.part_6a9 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6a9
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6a9
+            GROUP BY sha256url
+
+1706   6aa
+CREATE TABLE sorted1.part_6aa SELECT * FROM engine82.part_6aa ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6aa
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6aa
+            GROUP BY sha256url
+
+1707   6ab
+CREATE TABLE sorted1.part_6ab SELECT * FROM engine82.part_6ab ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6ab
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6ab
+            GROUP BY sha256url
+
+1708   6ac
+CREATE TABLE sorted1.part_6ac SELECT * FROM engine82.part_6ac ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6ac
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6ac
+            GROUP BY sha256url
+
+1709   6ad
+CREATE TABLE sorted1.part_6ad SELECT * FROM engine82.part_6ad ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6ad
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6ad
+            GROUP BY sha256url
+
+1710   6ae
+CREATE TABLE sorted1.part_6ae SELECT * FROM engine82.part_6ae ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6ae
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6ae
+            GROUP BY sha256url
+
+1711   6af
+CREATE TABLE sorted1.part_6af SELECT * FROM engine82.part_6af ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6af
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6af
+            GROUP BY sha256url
+
+1712   6b0
+CREATE TABLE sorted1.part_6b0 SELECT * FROM engine82.part_6b0 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6b0
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6b0
+            GROUP BY sha256url
+
+1713   6b1
+CREATE TABLE sorted1.part_6b1 SELECT * FROM engine82.part_6b1 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6b1
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6b1
+            GROUP BY sha256url
+
+1714   6b2
+CREATE TABLE sorted1.part_6b2 SELECT * FROM engine82.part_6b2 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6b2
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6b2
+            GROUP BY sha256url
+
+1715   6b3
+CREATE TABLE sorted1.part_6b3 SELECT * FROM engine82.part_6b3 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6b3
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6b3
+            GROUP BY sha256url
+
+1716   6b4
+CREATE TABLE sorted1.part_6b4 SELECT * FROM engine82.part_6b4 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6b4
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6b4
+            GROUP BY sha256url
+
+1717   6b5
+CREATE TABLE sorted1.part_6b5 SELECT * FROM engine82.part_6b5 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6b5
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6b5
+            GROUP BY sha256url
+
+1718   6b6
+CREATE TABLE sorted1.part_6b6 SELECT * FROM engine82.part_6b6 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6b6
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6b6
+            GROUP BY sha256url
+
+1719   6b7
+CREATE TABLE sorted1.part_6b7 SELECT * FROM engine82.part_6b7 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6b7
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6b7
+            GROUP BY sha256url
+
+1720   6b8
+CREATE TABLE sorted1.part_6b8 SELECT * FROM engine82.part_6b8 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6b8
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6b8
+            GROUP BY sha256url
+
+1721   6b9
+CREATE TABLE sorted1.part_6b9 SELECT * FROM engine82.part_6b9 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6b9
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6b9
+            GROUP BY sha256url
+
+1722   6ba
+CREATE TABLE sorted1.part_6ba SELECT * FROM engine82.part_6ba ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6ba
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6ba
+            GROUP BY sha256url
+
+1723   6bb
+CREATE TABLE sorted1.part_6bb SELECT * FROM engine82.part_6bb ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6bb
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6bb
+            GROUP BY sha256url
+
+1724   6bc
+CREATE TABLE sorted1.part_6bc SELECT * FROM engine82.part_6bc ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6bc
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6bc
+            GROUP BY sha256url
+
+1725   6bd
+CREATE TABLE sorted1.part_6bd SELECT * FROM engine82.part_6bd ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6bd
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6bd
+            GROUP BY sha256url
+
+1726   6be
+CREATE TABLE sorted1.part_6be SELECT * FROM engine82.part_6be ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6be
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6be
+            GROUP BY sha256url
+
+1727   6bf
+CREATE TABLE sorted1.part_6bf SELECT * FROM engine82.part_6bf ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6bf
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6bf
+            GROUP BY sha256url
+
+1728   6c0
+CREATE TABLE sorted1.part_6c0 SELECT * FROM engine82.part_6c0 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6c0
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6c0
+            GROUP BY sha256url
+
+1729   6c1
+CREATE TABLE sorted1.part_6c1 SELECT * FROM engine82.part_6c1 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6c1
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6c1
+            GROUP BY sha256url
+
+1730   6c2
+CREATE TABLE sorted1.part_6c2 SELECT * FROM engine82.part_6c2 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6c2
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6c2
+            GROUP BY sha256url
+
+1731   6c3
+CREATE TABLE sorted1.part_6c3 SELECT * FROM engine82.part_6c3 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6c3
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6c3
+            GROUP BY sha256url
+
+1732   6c4
+CREATE TABLE sorted1.part_6c4 SELECT * FROM engine82.part_6c4 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6c4
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6c4
+            GROUP BY sha256url
+
+1733   6c5
+CREATE TABLE sorted1.part_6c5 SELECT * FROM engine82.part_6c5 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6c5
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6c5
+            GROUP BY sha256url
+
+1734   6c6
+CREATE TABLE sorted1.part_6c6 SELECT * FROM engine82.part_6c6 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6c6
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6c6
+            GROUP BY sha256url
+
+1735   6c7
+CREATE TABLE sorted1.part_6c7 SELECT * FROM engine82.part_6c7 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6c7
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6c7
+            GROUP BY sha256url
+
+1736   6c8
+CREATE TABLE sorted1.part_6c8 SELECT * FROM engine82.part_6c8 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6c8
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6c8
+            GROUP BY sha256url
+
+1737   6c9
+CREATE TABLE sorted1.part_6c9 SELECT * FROM engine82.part_6c9 ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6c9
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6c9
+            GROUP BY sha256url
+
+1738   6ca
+CREATE TABLE sorted1.part_6ca SELECT * FROM engine82.part_6ca ORDER BY period DESC;
+
+SET sql_mode = '';
+        INSERT LOW_PRIORITY INTO engine83.part_6ca
+          SELECT DISTINCT (sha256url)
+              ,md5root
+              ,url
+              ,root
+              ,tags
+              ,title
+              ,body
+              ,MIN(alexa)
+              ,MAX(rank)
+              ,SUM(hit1)
+              ,SUM(hit2)
+              ,SUM(hit3)
+              ,category
+              ,period
+              ,AVG(gunning)
+              ,AVG(flesch)
+              ,AVG(kincaid)
+              ,AVG(sentence)
+              ,AVG(words)
+              ,AVG(syllables)
+              ,AVG(complex)
+            FROM sorted1.part_6ca
             GROUP BY sha256url

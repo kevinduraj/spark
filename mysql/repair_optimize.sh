@@ -2,9 +2,7 @@
 #------------------------------------------------------------------------------------#
 # mysql_config_editor set --login-path=local --host=localhost --user=root --password
 #------------------------------------------------------------------------------------#
-
-repair_tables()
-{
+repair_tables() {
   DATABASE=$1
 
   TABLE_LIST=`mysql --login-path=local -NB -e "show tables from $DATABASE"`
@@ -21,6 +19,7 @@ repair_tables()
       echo $RES
   done
 }
+
 #------------------------------------------------------------------------------------#
 #           Repair and optimize all tables in the following databases
 #------------------------------------------------------------------------------------#

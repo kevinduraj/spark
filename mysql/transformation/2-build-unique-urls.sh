@@ -1,9 +1,9 @@
 #!/bin/bash
 #---------------------------------------------------------------------------------------#
 SOURCE='engine82'
-SORTED='sorted'
+SORTED='sorted1'
 FINAL1='engine83'
-START='000'
+START='5fb'
 #---------------------------------------------------------------------------------------#
 drop_table()
 {
@@ -26,11 +26,13 @@ sort_tables()
   RES=`mysql --login-path=local -NB -e  "$SQL"`; echo "$RES"
 }
 #---------------------------------------------------------------------------------------#
+#               INSERT LOW_PRIORITY INTO $FINAL1.$TABLE
+#---------------------------------------------------------------------------------------#
 latest_entry()
 {
   TABLE=$1
   SQL="SET sql_mode = '';
-        INSERT LOW_PRIORITY INTO $FINAL1.$TABLE
+        INSERT INTO $FINAL1.$TABLE
           SELECT DISTINCT (sha256url)
               ,md5root
               ,url
