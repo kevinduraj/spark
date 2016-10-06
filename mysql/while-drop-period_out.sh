@@ -5,12 +5,11 @@
 # gosleep=$((gosleep+2)) 
 #-------------------------------------------------------------------------------------#
 USERNAME='root'
-PASSWORD='xapian64'
 #-------------------------------------------------------------------------------------#
 alter_tables()
 {
   DATABASE=$1
-  TABLE_LIST=`mysql -u $USERNAME -p$PASSWORD -NB -e "SHOW TABLES FROM $DATABASE"`
+  TABLE_LIST=`mysql -u $USERNAME -p${PASS} -NB -e "SHOW TABLES FROM $DATABASE"`
   counter=0; gosleep=0; last=0; 
 
   for E in $TABLE_LIST
@@ -19,15 +18,15 @@ alter_tables()
         flag=0
 	while [ "$flag" -eq "0" ]
 	do
-	    proc=`mysqladmin -uroot -pxapian64  processlist | wc | awk '{ print $1 }'`
+	    proc=`mysqladmin -uroot -p{PASS}  processlist | wc | awk '{ print $1 }'`
 	
 	    #-------------------------------------------------------------------------#
-	    if [ "$proc" -lt "32" ]; then
+	    if [ "$proc" -lt "16" ]; then
 	    	#-------------------------------------------------------#
 	    	SQL="ALTER TABLE $DATABASE.$E DROP period_out;"
 	    	#-------------------------------------------------------#
 	    	echo "$counter: $SQL"; sleep 0.1
-	    	nohup mysql -u $USERNAME -p$PASSWORD -NB -e  "$SQL" &
+	    	nohup mysql -u $USERNAME -p${PASS} -NB -e  "$SQL" &
 	        flag=1
 	    else
 	        flag=0

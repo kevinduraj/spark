@@ -5,7 +5,7 @@
 repair_tables() {
   DATABASE=$1
 
-  TABLE_LIST=`mysql --login-path=local -NB -e "show tables from $DATABASE"`
+  TABLE_LIST=`mysql -uroot -p${PASS} -NB -e "show tables from $DATABASE"`
 
   for E in $TABLE_LIST
   do
@@ -15,7 +15,7 @@ repair_tables() {
            UNLOCK TABLES; "
 
       echo $SQL
-      RES=`mysql --login-path=local -NB -e  "$SQL"`
+      RES=`mysql -uroot -p${PASS} -NB -e  "$SQL"`
       echo $RES
   done
 }
@@ -23,10 +23,7 @@ repair_tables() {
 #------------------------------------------------------------------------------------#
 #           Repair and optimize all tables in the following databases
 #------------------------------------------------------------------------------------#
-mydb="engine50
-engine77
-engine78
-engine79"
+mydb="engine50"
 
 for db in $mydb
 do  
