@@ -1,0 +1,258 @@
+Database: is [engine83]
+LOCK TABLES engine83.part_000 WRITE; DELETE FROM engine83.part_000 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_000; OPTIMIZE TABLE engine83.part_000; UNLOCK TABLES;
+engine83.part_000 repair status OK engine83.part_000 optimize status OK
+LOCK TABLES engine83.part_001 WRITE; DELETE FROM engine83.part_001 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_001; OPTIMIZE TABLE engine83.part_001; UNLOCK TABLES;
+engine83.part_001 repair status OK engine83.part_001 optimize status OK
+LOCK TABLES engine83.part_002 WRITE; DELETE FROM engine83.part_002 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_002; OPTIMIZE TABLE engine83.part_002; UNLOCK TABLES;
+engine83.part_002 repair status OK engine83.part_002 optimize status OK
+LOCK TABLES engine83.part_003 WRITE; DELETE FROM engine83.part_003 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_003; OPTIMIZE TABLE engine83.part_003; UNLOCK TABLES;
+engine83.part_003 repair status OK engine83.part_003 optimize status OK
+LOCK TABLES engine83.part_004 WRITE; DELETE FROM engine83.part_004 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_004; OPTIMIZE TABLE engine83.part_004; UNLOCK TABLES;
+engine83.part_004 repair status OK engine83.part_004 optimize status OK
+LOCK TABLES engine83.part_005 WRITE; DELETE FROM engine83.part_005 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_005; OPTIMIZE TABLE engine83.part_005; UNLOCK TABLES;
+engine83.part_005 repair status OK engine83.part_005 optimize status OK
+LOCK TABLES engine83.part_006 WRITE; DELETE FROM engine83.part_006 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_006; OPTIMIZE TABLE engine83.part_006; UNLOCK TABLES;
+engine83.part_006 repair status OK engine83.part_006 optimize status OK
+LOCK TABLES engine83.part_007 WRITE; DELETE FROM engine83.part_007 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_007; OPTIMIZE TABLE engine83.part_007; UNLOCK TABLES;
+engine83.part_007 repair status OK engine83.part_007 optimize status OK
+LOCK TABLES engine83.part_008 WRITE; DELETE FROM engine83.part_008 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_008; OPTIMIZE TABLE engine83.part_008; UNLOCK TABLES;
+engine83.part_008 repair status OK engine83.part_008 optimize status OK
+LOCK TABLES engine83.part_009 WRITE; DELETE FROM engine83.part_009 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_009; OPTIMIZE TABLE engine83.part_009; UNLOCK TABLES;
+engine83.part_009 repair status OK engine83.part_009 optimize status OK
+LOCK TABLES engine83.part_00a WRITE; DELETE FROM engine83.part_00a WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_00a; OPTIMIZE TABLE engine83.part_00a; UNLOCK TABLES;
+engine83.part_00a repair status OK engine83.part_00a optimize status OK
+LOCK TABLES engine83.part_00b WRITE; DELETE FROM engine83.part_00b WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_00b; OPTIMIZE TABLE engine83.part_00b; UNLOCK TABLES;
+engine83.part_00b repair status OK engine83.part_00b optimize status OK
+LOCK TABLES engine83.part_00c WRITE; DELETE FROM engine83.part_00c WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_00c; OPTIMIZE TABLE engine83.part_00c; UNLOCK TABLES;
+engine83.part_00c repair status OK engine83.part_00c optimize status OK
+LOCK TABLES engine83.part_00d WRITE; DELETE FROM engine83.part_00d WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_00d; OPTIMIZE TABLE engine83.part_00d; UNLOCK TABLES;
+engine83.part_00d repair status OK engine83.part_00d optimize status OK
+LOCK TABLES engine83.part_00e WRITE; DELETE FROM engine83.part_00e WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_00e; OPTIMIZE TABLE engine83.part_00e; UNLOCK TABLES;
+engine83.part_00e repair status OK engine83.part_00e optimize status OK
+LOCK TABLES engine83.part_00f WRITE; DELETE FROM engine83.part_00f WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_00f; OPTIMIZE TABLE engine83.part_00f; UNLOCK TABLES;
+engine83.part_00f repair status OK engine83.part_00f optimize status OK
+LOCK TABLES engine83.part_010 WRITE; DELETE FROM engine83.part_010 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_010; OPTIMIZE TABLE engine83.part_010; UNLOCK TABLES;
+engine83.part_010 repair status OK engine83.part_010 optimize status OK
+LOCK TABLES engine83.part_011 WRITE; DELETE FROM engine83.part_011 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_011; OPTIMIZE TABLE engine83.part_011; UNLOCK TABLES;
+engine83.part_011 repair status OK engine83.part_011 optimize status OK
+LOCK TABLES engine83.part_012 WRITE; DELETE FROM engine83.part_012 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_012; OPTIMIZE TABLE engine83.part_012; UNLOCK TABLES;
+engine83.part_012 repair status OK engine83.part_012 optimize status OK
+LOCK TABLES engine83.part_013 WRITE; DELETE FROM engine83.part_013 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_013; OPTIMIZE TABLE engine83.part_013; UNLOCK TABLES;
+engine83.part_013 repair status OK engine83.part_013 optimize status OK
+LOCK TABLES engine83.part_014 WRITE; DELETE FROM engine83.part_014 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_014; OPTIMIZE TABLE engine83.part_014; UNLOCK TABLES;
+engine83.part_014 repair status OK engine83.part_014 optimize status OK
+LOCK TABLES engine83.part_015 WRITE; DELETE FROM engine83.part_015 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_015; OPTIMIZE TABLE engine83.part_015; UNLOCK TABLES;
+engine83.part_015 repair status OK engine83.part_015 optimize status OK
+LOCK TABLES engine83.part_016 WRITE; DELETE FROM engine83.part_016 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_016; OPTIMIZE TABLE engine83.part_016; UNLOCK TABLES;
+engine83.part_016 repair status OK engine83.part_016 optimize status OK
+LOCK TABLES engine83.part_017 WRITE; DELETE FROM engine83.part_017 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_017; OPTIMIZE TABLE engine83.part_017; UNLOCK TABLES;
+engine83.part_017 repair status OK engine83.part_017 optimize status OK
+LOCK TABLES engine83.part_018 WRITE; DELETE FROM engine83.part_018 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_018; OPTIMIZE TABLE engine83.part_018; UNLOCK TABLES;
+engine83.part_018 repair status OK engine83.part_018 optimize status OK
+LOCK TABLES engine83.part_019 WRITE; DELETE FROM engine83.part_019 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_019; OPTIMIZE TABLE engine83.part_019; UNLOCK TABLES;
+engine83.part_019 repair status OK engine83.part_019 optimize status OK
+LOCK TABLES engine83.part_01a WRITE; DELETE FROM engine83.part_01a WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_01a; OPTIMIZE TABLE engine83.part_01a; UNLOCK TABLES;
+engine83.part_01a repair status OK engine83.part_01a optimize status OK
+LOCK TABLES engine83.part_01b WRITE; DELETE FROM engine83.part_01b WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_01b; OPTIMIZE TABLE engine83.part_01b; UNLOCK TABLES;
+engine83.part_01b repair status OK engine83.part_01b optimize status OK
+LOCK TABLES engine83.part_01c WRITE; DELETE FROM engine83.part_01c WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_01c; OPTIMIZE TABLE engine83.part_01c; UNLOCK TABLES;
+engine83.part_01c repair status OK engine83.part_01c optimize status OK
+LOCK TABLES engine83.part_01d WRITE; DELETE FROM engine83.part_01d WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_01d; OPTIMIZE TABLE engine83.part_01d; UNLOCK TABLES;
+engine83.part_01d repair status OK engine83.part_01d optimize status OK
+LOCK TABLES engine83.part_01e WRITE; DELETE FROM engine83.part_01e WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_01e; OPTIMIZE TABLE engine83.part_01e; UNLOCK TABLES;
+engine83.part_01e repair status OK engine83.part_01e optimize status OK
+LOCK TABLES engine83.part_01f WRITE; DELETE FROM engine83.part_01f WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_01f; OPTIMIZE TABLE engine83.part_01f; UNLOCK TABLES;
+engine83.part_01f repair status OK engine83.part_01f optimize status OK
+LOCK TABLES engine83.part_020 WRITE; DELETE FROM engine83.part_020 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_020; OPTIMIZE TABLE engine83.part_020; UNLOCK TABLES;
+engine83.part_020 repair status OK engine83.part_020 optimize status OK
+LOCK TABLES engine83.part_021 WRITE; DELETE FROM engine83.part_021 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_021; OPTIMIZE TABLE engine83.part_021; UNLOCK TABLES;
+engine83.part_021 repair status OK engine83.part_021 optimize status OK
+LOCK TABLES engine83.part_022 WRITE; DELETE FROM engine83.part_022 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_022; OPTIMIZE TABLE engine83.part_022; UNLOCK TABLES;
+engine83.part_022 repair status OK engine83.part_022 optimize status OK
+LOCK TABLES engine83.part_023 WRITE; DELETE FROM engine83.part_023 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_023; OPTIMIZE TABLE engine83.part_023; UNLOCK TABLES;
+engine83.part_023 repair status OK engine83.part_023 optimize status OK
+LOCK TABLES engine83.part_024 WRITE; DELETE FROM engine83.part_024 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_024; OPTIMIZE TABLE engine83.part_024; UNLOCK TABLES;
+engine83.part_024 repair status OK engine83.part_024 optimize status OK
+LOCK TABLES engine83.part_025 WRITE; DELETE FROM engine83.part_025 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_025; OPTIMIZE TABLE engine83.part_025; UNLOCK TABLES;
+engine83.part_025 repair status OK engine83.part_025 optimize status OK
+LOCK TABLES engine83.part_026 WRITE; DELETE FROM engine83.part_026 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_026; OPTIMIZE TABLE engine83.part_026; UNLOCK TABLES;
+engine83.part_026 repair status OK engine83.part_026 optimize status OK
+LOCK TABLES engine83.part_027 WRITE; DELETE FROM engine83.part_027 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_027; OPTIMIZE TABLE engine83.part_027; UNLOCK TABLES;
+engine83.part_027 repair status OK engine83.part_027 optimize status OK
+LOCK TABLES engine83.part_028 WRITE; DELETE FROM engine83.part_028 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_028; OPTIMIZE TABLE engine83.part_028; UNLOCK TABLES;
+engine83.part_028 repair status OK engine83.part_028 optimize status OK
+LOCK TABLES engine83.part_029 WRITE; DELETE FROM engine83.part_029 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_029; OPTIMIZE TABLE engine83.part_029; UNLOCK TABLES;
+engine83.part_029 repair status OK engine83.part_029 optimize status OK
+LOCK TABLES engine83.part_02a WRITE; DELETE FROM engine83.part_02a WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_02a; OPTIMIZE TABLE engine83.part_02a; UNLOCK TABLES;
+engine83.part_02a repair status OK engine83.part_02a optimize status OK
+LOCK TABLES engine83.part_02b WRITE; DELETE FROM engine83.part_02b WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_02b; OPTIMIZE TABLE engine83.part_02b; UNLOCK TABLES;
+engine83.part_02b repair status OK engine83.part_02b optimize status OK
+LOCK TABLES engine83.part_02c WRITE; DELETE FROM engine83.part_02c WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_02c; OPTIMIZE TABLE engine83.part_02c; UNLOCK TABLES;
+engine83.part_02c repair status OK engine83.part_02c optimize status OK
+LOCK TABLES engine83.part_02d WRITE; DELETE FROM engine83.part_02d WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_02d; OPTIMIZE TABLE engine83.part_02d; UNLOCK TABLES;
+engine83.part_02d repair status OK engine83.part_02d optimize status OK
+LOCK TABLES engine83.part_02e WRITE; DELETE FROM engine83.part_02e WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_02e; OPTIMIZE TABLE engine83.part_02e; UNLOCK TABLES;
+engine83.part_02e repair status OK engine83.part_02e optimize status OK
+LOCK TABLES engine83.part_02f WRITE; DELETE FROM engine83.part_02f WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_02f; OPTIMIZE TABLE engine83.part_02f; UNLOCK TABLES;
+engine83.part_02f repair status OK engine83.part_02f optimize status OK
+LOCK TABLES engine83.part_030 WRITE; DELETE FROM engine83.part_030 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_030; OPTIMIZE TABLE engine83.part_030; UNLOCK TABLES;
+engine83.part_030 repair status OK engine83.part_030 optimize status OK
+LOCK TABLES engine83.part_031 WRITE; DELETE FROM engine83.part_031 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_031; OPTIMIZE TABLE engine83.part_031; UNLOCK TABLES;
+engine83.part_031 repair status OK engine83.part_031 optimize status OK
+LOCK TABLES engine83.part_032 WRITE; DELETE FROM engine83.part_032 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_032; OPTIMIZE TABLE engine83.part_032; UNLOCK TABLES;
+engine83.part_032 repair status OK engine83.part_032 optimize status OK
+LOCK TABLES engine83.part_033 WRITE; DELETE FROM engine83.part_033 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_033; OPTIMIZE TABLE engine83.part_033; UNLOCK TABLES;
+engine83.part_033 repair status OK engine83.part_033 optimize status OK
+LOCK TABLES engine83.part_034 WRITE; DELETE FROM engine83.part_034 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_034; OPTIMIZE TABLE engine83.part_034; UNLOCK TABLES;
+engine83.part_034 repair status OK engine83.part_034 optimize status OK
+LOCK TABLES engine83.part_035 WRITE; DELETE FROM engine83.part_035 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_035; OPTIMIZE TABLE engine83.part_035; UNLOCK TABLES;
+engine83.part_035 repair status OK engine83.part_035 optimize status OK
+LOCK TABLES engine83.part_036 WRITE; DELETE FROM engine83.part_036 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_036; OPTIMIZE TABLE engine83.part_036; UNLOCK TABLES;
+engine83.part_036 repair status OK engine83.part_036 optimize status OK
+LOCK TABLES engine83.part_037 WRITE; DELETE FROM engine83.part_037 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_037; OPTIMIZE TABLE engine83.part_037; UNLOCK TABLES;
+engine83.part_037 repair status OK engine83.part_037 optimize status OK
+LOCK TABLES engine83.part_038 WRITE; DELETE FROM engine83.part_038 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_038; OPTIMIZE TABLE engine83.part_038; UNLOCK TABLES;
+engine83.part_038 repair status OK engine83.part_038 optimize status OK
+LOCK TABLES engine83.part_039 WRITE; DELETE FROM engine83.part_039 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_039; OPTIMIZE TABLE engine83.part_039; UNLOCK TABLES;
+engine83.part_039 repair status OK engine83.part_039 optimize status OK
+LOCK TABLES engine83.part_03a WRITE; DELETE FROM engine83.part_03a WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_03a; OPTIMIZE TABLE engine83.part_03a; UNLOCK TABLES;
+engine83.part_03a repair status OK engine83.part_03a optimize status OK
+LOCK TABLES engine83.part_03b WRITE; DELETE FROM engine83.part_03b WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_03b; OPTIMIZE TABLE engine83.part_03b; UNLOCK TABLES;
+engine83.part_03b repair status OK engine83.part_03b optimize status OK
+LOCK TABLES engine83.part_03c WRITE; DELETE FROM engine83.part_03c WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_03c; OPTIMIZE TABLE engine83.part_03c; UNLOCK TABLES;
+engine83.part_03c repair status OK engine83.part_03c optimize status OK
+LOCK TABLES engine83.part_03d WRITE; DELETE FROM engine83.part_03d WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_03d; OPTIMIZE TABLE engine83.part_03d; UNLOCK TABLES;
+engine83.part_03d repair status OK engine83.part_03d optimize status OK
+LOCK TABLES engine83.part_03e WRITE; DELETE FROM engine83.part_03e WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_03e; OPTIMIZE TABLE engine83.part_03e; UNLOCK TABLES;
+engine83.part_03e repair status OK engine83.part_03e optimize status OK
+LOCK TABLES engine83.part_03f WRITE; DELETE FROM engine83.part_03f WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_03f; OPTIMIZE TABLE engine83.part_03f; UNLOCK TABLES;
+engine83.part_03f repair status OK engine83.part_03f optimize status OK
+LOCK TABLES engine83.part_040 WRITE; DELETE FROM engine83.part_040 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_040; OPTIMIZE TABLE engine83.part_040; UNLOCK TABLES;
+engine83.part_040 repair status OK engine83.part_040 optimize status OK
+LOCK TABLES engine83.part_041 WRITE; DELETE FROM engine83.part_041 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_041; OPTIMIZE TABLE engine83.part_041; UNLOCK TABLES;
+engine83.part_041 repair status OK engine83.part_041 optimize status OK
+LOCK TABLES engine83.part_042 WRITE; DELETE FROM engine83.part_042 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_042; OPTIMIZE TABLE engine83.part_042; UNLOCK TABLES;
+engine83.part_042 repair status OK engine83.part_042 optimize status OK
+LOCK TABLES engine83.part_043 WRITE; DELETE FROM engine83.part_043 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_043; OPTIMIZE TABLE engine83.part_043; UNLOCK TABLES;
+engine83.part_043 repair status OK engine83.part_043 optimize status OK
+LOCK TABLES engine83.part_044 WRITE; DELETE FROM engine83.part_044 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_044; OPTIMIZE TABLE engine83.part_044; UNLOCK TABLES;
+engine83.part_044 repair status OK engine83.part_044 optimize status OK
+LOCK TABLES engine83.part_045 WRITE; DELETE FROM engine83.part_045 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_045; OPTIMIZE TABLE engine83.part_045; UNLOCK TABLES;
+engine83.part_045 repair status OK engine83.part_045 optimize status OK
+LOCK TABLES engine83.part_046 WRITE; DELETE FROM engine83.part_046 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_046; OPTIMIZE TABLE engine83.part_046; UNLOCK TABLES;
+engine83.part_046 repair status OK engine83.part_046 optimize status OK
+LOCK TABLES engine83.part_047 WRITE; DELETE FROM engine83.part_047 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_047; OPTIMIZE TABLE engine83.part_047; UNLOCK TABLES;
+engine83.part_047 repair status OK engine83.part_047 optimize status OK
+LOCK TABLES engine83.part_048 WRITE; DELETE FROM engine83.part_048 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_048; OPTIMIZE TABLE engine83.part_048; UNLOCK TABLES;
+engine83.part_048 repair status OK engine83.part_048 optimize status OK
+LOCK TABLES engine83.part_049 WRITE; DELETE FROM engine83.part_049 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_049; OPTIMIZE TABLE engine83.part_049; UNLOCK TABLES;
+engine83.part_049 repair status OK engine83.part_049 optimize status OK
+LOCK TABLES engine83.part_04a WRITE; DELETE FROM engine83.part_04a WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_04a; OPTIMIZE TABLE engine83.part_04a; UNLOCK TABLES;
+engine83.part_04a repair status OK engine83.part_04a optimize status OK
+LOCK TABLES engine83.part_04b WRITE; DELETE FROM engine83.part_04b WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_04b; OPTIMIZE TABLE engine83.part_04b; UNLOCK TABLES;
+engine83.part_04b repair status OK engine83.part_04b optimize status OK
+LOCK TABLES engine83.part_04c WRITE; DELETE FROM engine83.part_04c WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_04c; OPTIMIZE TABLE engine83.part_04c; UNLOCK TABLES;
+engine83.part_04c repair status OK engine83.part_04c optimize status OK
+LOCK TABLES engine83.part_04d WRITE; DELETE FROM engine83.part_04d WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_04d; OPTIMIZE TABLE engine83.part_04d; UNLOCK TABLES;
+engine83.part_04d repair status OK engine83.part_04d optimize status OK
+LOCK TABLES engine83.part_04e WRITE; DELETE FROM engine83.part_04e WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_04e; OPTIMIZE TABLE engine83.part_04e; UNLOCK TABLES;
+engine83.part_04e repair status OK engine83.part_04e optimize status OK
+LOCK TABLES engine83.part_04f WRITE; DELETE FROM engine83.part_04f WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_04f; OPTIMIZE TABLE engine83.part_04f; UNLOCK TABLES;
+engine83.part_04f repair status OK engine83.part_04f optimize status OK
+LOCK TABLES engine83.part_050 WRITE; DELETE FROM engine83.part_050 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_050; OPTIMIZE TABLE engine83.part_050; UNLOCK TABLES;
+engine83.part_050 repair status OK engine83.part_050 optimize status OK
+LOCK TABLES engine83.part_051 WRITE; DELETE FROM engine83.part_051 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_051; OPTIMIZE TABLE engine83.part_051; UNLOCK TABLES;
+engine83.part_051 repair status OK engine83.part_051 optimize status OK
+LOCK TABLES engine83.part_052 WRITE; DELETE FROM engine83.part_052 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_052; OPTIMIZE TABLE engine83.part_052; UNLOCK TABLES;
+engine83.part_052 repair status OK engine83.part_052 optimize status OK
+LOCK TABLES engine83.part_053 WRITE; DELETE FROM engine83.part_053 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_053; OPTIMIZE TABLE engine83.part_053; UNLOCK TABLES;
+engine83.part_053 repair status OK engine83.part_053 optimize status OK
+LOCK TABLES engine83.part_054 WRITE; DELETE FROM engine83.part_054 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_054; OPTIMIZE TABLE engine83.part_054; UNLOCK TABLES;
+engine83.part_054 repair status OK engine83.part_054 optimize status OK
+LOCK TABLES engine83.part_055 WRITE; DELETE FROM engine83.part_055 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_055; OPTIMIZE TABLE engine83.part_055; UNLOCK TABLES;
+engine83.part_055 repair status OK engine83.part_055 optimize status OK
+LOCK TABLES engine83.part_056 WRITE; DELETE FROM engine83.part_056 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_056; OPTIMIZE TABLE engine83.part_056; UNLOCK TABLES;
+engine83.part_056 repair status OK engine83.part_056 optimize status OK
+LOCK TABLES engine83.part_057 WRITE; DELETE FROM engine83.part_057 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_057; OPTIMIZE TABLE engine83.part_057; UNLOCK TABLES;
+engine83.part_057 repair status OK engine83.part_057 optimize status OK
+LOCK TABLES engine83.part_058 WRITE; DELETE FROM engine83.part_058 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_058; OPTIMIZE TABLE engine83.part_058; UNLOCK TABLES;
+engine83.part_058 repair status OK engine83.part_058 optimize status OK
+LOCK TABLES engine83.part_059 WRITE; DELETE FROM engine83.part_059 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_059; OPTIMIZE TABLE engine83.part_059; UNLOCK TABLES;
+engine83.part_059 repair status OK engine83.part_059 optimize status OK
+LOCK TABLES engine83.part_05a WRITE; DELETE FROM engine83.part_05a WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_05a; OPTIMIZE TABLE engine83.part_05a; UNLOCK TABLES;
+engine83.part_05a repair status OK engine83.part_05a optimize status OK
+LOCK TABLES engine83.part_05b WRITE; DELETE FROM engine83.part_05b WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_05b; OPTIMIZE TABLE engine83.part_05b; UNLOCK TABLES;
+engine83.part_05b repair status OK engine83.part_05b optimize status OK
+LOCK TABLES engine83.part_05c WRITE; DELETE FROM engine83.part_05c WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_05c; OPTIMIZE TABLE engine83.part_05c; UNLOCK TABLES;
+engine83.part_05c repair status OK engine83.part_05c optimize status OK
+LOCK TABLES engine83.part_05d WRITE; DELETE FROM engine83.part_05d WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_05d; OPTIMIZE TABLE engine83.part_05d; UNLOCK TABLES;
+engine83.part_05d repair status OK engine83.part_05d optimize status OK
+LOCK TABLES engine83.part_05e WRITE; DELETE FROM engine83.part_05e WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_05e; OPTIMIZE TABLE engine83.part_05e; UNLOCK TABLES;
+engine83.part_05e repair status OK engine83.part_05e optimize status OK
+LOCK TABLES engine83.part_05f WRITE; DELETE FROM engine83.part_05f WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_05f; OPTIMIZE TABLE engine83.part_05f; UNLOCK TABLES;
+engine83.part_05f repair status OK engine83.part_05f optimize status OK
+LOCK TABLES engine83.part_060 WRITE; DELETE FROM engine83.part_060 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_060; OPTIMIZE TABLE engine83.part_060; UNLOCK TABLES;
+engine83.part_060 repair status OK engine83.part_060 optimize status OK
+LOCK TABLES engine83.part_061 WRITE; DELETE FROM engine83.part_061 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_061; OPTIMIZE TABLE engine83.part_061; UNLOCK TABLES;
+engine83.part_061 repair status OK engine83.part_061 optimize status OK
+LOCK TABLES engine83.part_062 WRITE; DELETE FROM engine83.part_062 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_062; OPTIMIZE TABLE engine83.part_062; UNLOCK TABLES;
+engine83.part_062 repair status OK engine83.part_062 optimize status OK
+LOCK TABLES engine83.part_063 WRITE; DELETE FROM engine83.part_063 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_063; OPTIMIZE TABLE engine83.part_063; UNLOCK TABLES;
+engine83.part_063 repair status OK engine83.part_063 optimize status OK
+LOCK TABLES engine83.part_064 WRITE; DELETE FROM engine83.part_064 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_064; OPTIMIZE TABLE engine83.part_064; UNLOCK TABLES;
+engine83.part_064 repair status OK engine83.part_064 optimize status OK
+LOCK TABLES engine83.part_065 WRITE; DELETE FROM engine83.part_065 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_065; OPTIMIZE TABLE engine83.part_065; UNLOCK TABLES;
+engine83.part_065 repair status OK engine83.part_065 optimize status OK
+LOCK TABLES engine83.part_066 WRITE; DELETE FROM engine83.part_066 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_066; OPTIMIZE TABLE engine83.part_066; UNLOCK TABLES;
+engine83.part_066 repair status OK engine83.part_066 optimize status OK
+LOCK TABLES engine83.part_067 WRITE; DELETE FROM engine83.part_067 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_067; OPTIMIZE TABLE engine83.part_067; UNLOCK TABLES;
+engine83.part_067 repair status OK engine83.part_067 optimize status OK
+LOCK TABLES engine83.part_068 WRITE; DELETE FROM engine83.part_068 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_068; OPTIMIZE TABLE engine83.part_068; UNLOCK TABLES;
+engine83.part_068 repair status OK engine83.part_068 optimize status OK
+LOCK TABLES engine83.part_069 WRITE; DELETE FROM engine83.part_069 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_069; OPTIMIZE TABLE engine83.part_069; UNLOCK TABLES;
+engine83.part_069 repair status OK engine83.part_069 optimize status OK
+LOCK TABLES engine83.part_06a WRITE; DELETE FROM engine83.part_06a WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_06a; OPTIMIZE TABLE engine83.part_06a; UNLOCK TABLES;
+engine83.part_06a repair status OK engine83.part_06a optimize status OK
+LOCK TABLES engine83.part_06b WRITE; DELETE FROM engine83.part_06b WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_06b; OPTIMIZE TABLE engine83.part_06b; UNLOCK TABLES;
+engine83.part_06b repair status OK engine83.part_06b optimize status OK
+LOCK TABLES engine83.part_06c WRITE; DELETE FROM engine83.part_06c WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_06c; OPTIMIZE TABLE engine83.part_06c; UNLOCK TABLES;
+engine83.part_06c repair status OK engine83.part_06c optimize status OK
+LOCK TABLES engine83.part_06d WRITE; DELETE FROM engine83.part_06d WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_06d; OPTIMIZE TABLE engine83.part_06d; UNLOCK TABLES;
+engine83.part_06d repair status OK engine83.part_06d optimize status OK
+LOCK TABLES engine83.part_06e WRITE; DELETE FROM engine83.part_06e WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_06e; OPTIMIZE TABLE engine83.part_06e; UNLOCK TABLES;
+engine83.part_06e repair status OK engine83.part_06e optimize status OK
+LOCK TABLES engine83.part_06f WRITE; DELETE FROM engine83.part_06f WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_06f; OPTIMIZE TABLE engine83.part_06f; UNLOCK TABLES;
+engine83.part_06f repair status OK engine83.part_06f optimize status OK
+LOCK TABLES engine83.part_070 WRITE; DELETE FROM engine83.part_070 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_070; OPTIMIZE TABLE engine83.part_070; UNLOCK TABLES;
+engine83.part_070 repair status OK engine83.part_070 optimize status OK
+LOCK TABLES engine83.part_071 WRITE; DELETE FROM engine83.part_071 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_071; OPTIMIZE TABLE engine83.part_071; UNLOCK TABLES;
+engine83.part_071 repair status OK engine83.part_071 optimize status OK
+LOCK TABLES engine83.part_072 WRITE; DELETE FROM engine83.part_072 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_072; OPTIMIZE TABLE engine83.part_072; UNLOCK TABLES;
+engine83.part_072 repair status OK engine83.part_072 optimize status OK
+LOCK TABLES engine83.part_073 WRITE; DELETE FROM engine83.part_073 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_073; OPTIMIZE TABLE engine83.part_073; UNLOCK TABLES;
+engine83.part_073 repair status OK engine83.part_073 optimize status OK
+LOCK TABLES engine83.part_074 WRITE; DELETE FROM engine83.part_074 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_074; OPTIMIZE TABLE engine83.part_074; UNLOCK TABLES;
+engine83.part_074 repair status OK engine83.part_074 optimize status OK
+LOCK TABLES engine83.part_075 WRITE; DELETE FROM engine83.part_075 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_075; OPTIMIZE TABLE engine83.part_075; UNLOCK TABLES;
+engine83.part_075 repair status OK engine83.part_075 optimize status OK
+LOCK TABLES engine83.part_076 WRITE; DELETE FROM engine83.part_076 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_076; OPTIMIZE TABLE engine83.part_076; UNLOCK TABLES;
+engine83.part_076 repair status OK engine83.part_076 optimize status OK
+LOCK TABLES engine83.part_077 WRITE; DELETE FROM engine83.part_077 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_077; OPTIMIZE TABLE engine83.part_077; UNLOCK TABLES;
+engine83.part_077 repair status OK engine83.part_077 optimize status OK
+LOCK TABLES engine83.part_078 WRITE; DELETE FROM engine83.part_078 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_078; OPTIMIZE TABLE engine83.part_078; UNLOCK TABLES;
+engine83.part_078 repair status OK engine83.part_078 optimize status OK
+LOCK TABLES engine83.part_079 WRITE; DELETE FROM engine83.part_079 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_079; OPTIMIZE TABLE engine83.part_079; UNLOCK TABLES;
+engine83.part_079 repair status OK engine83.part_079 optimize status OK
+LOCK TABLES engine83.part_07a WRITE; DELETE FROM engine83.part_07a WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_07a; OPTIMIZE TABLE engine83.part_07a; UNLOCK TABLES;
+engine83.part_07a repair status OK engine83.part_07a optimize status OK
+LOCK TABLES engine83.part_07b WRITE; DELETE FROM engine83.part_07b WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_07b; OPTIMIZE TABLE engine83.part_07b; UNLOCK TABLES;
+engine83.part_07b repair status OK engine83.part_07b optimize status OK
+LOCK TABLES engine83.part_07c WRITE; DELETE FROM engine83.part_07c WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_07c; OPTIMIZE TABLE engine83.part_07c; UNLOCK TABLES;
+engine83.part_07c repair status OK engine83.part_07c optimize status OK
+LOCK TABLES engine83.part_07d WRITE; DELETE FROM engine83.part_07d WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_07d; OPTIMIZE TABLE engine83.part_07d; UNLOCK TABLES;
+engine83.part_07d repair status OK engine83.part_07d optimize status OK
+LOCK TABLES engine83.part_07e WRITE; DELETE FROM engine83.part_07e WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_07e; OPTIMIZE TABLE engine83.part_07e; UNLOCK TABLES;
+engine83.part_07e repair status OK engine83.part_07e optimize status OK
+LOCK TABLES engine83.part_07f WRITE; DELETE FROM engine83.part_07f WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_07f; OPTIMIZE TABLE engine83.part_07f; UNLOCK TABLES;
+engine83.part_07f repair status OK engine83.part_07f optimize status OK
+LOCK TABLES engine83.part_080 WRITE; DELETE FROM engine83.part_080 WHERE title LIKE 'find 1 friend'; REPAIR TABLE engine83.part_080; OPTIMIZE TABLE engine83.part_080; UNLOCK TABLES;

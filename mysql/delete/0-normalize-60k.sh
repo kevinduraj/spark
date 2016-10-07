@@ -6,7 +6,6 @@ LEFT=40000
 repair_tables()
 {
   USERNAME='root'
-  PASSWORD='xapian64'
   DATABASE=$1
 
   TABLE_LIST=`mysql -u $USERNAME -p$PASSWORD -NB -e "show tables from $DATABASE"`
