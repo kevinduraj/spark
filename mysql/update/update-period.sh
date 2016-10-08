@@ -3,18 +3,15 @@
 # python = int("b5f", 15)
 # gosleep=$((gosleep+2)) 
 #--------------------------------------------------------------------------------------#
-USERNAME='root'
-PASSWORD='xapian64'
-#--------------------------------------------------------------------------------------#
 alter_tables()
 {
   DATABASE=$1
-  TABLE_LIST=`mysql -u $USERNAME -p$PASSWORD -NB -e "SHOW TABLES FROM $DATABASE"`
+  TABLE_LIST=`mysql -uroot -p${PASS} -NB -e "SHOW TABLES FROM $DATABASE"`
   counter=0; gosleep=0; last=0;
 
   for E in $TABLE_LIST
   do
-    proc=`mysqladmin -uroot -pxapian64  processlist | wc | awk '{ print $1 }'`
+    proc=`mysqladmin -uroot -p${PASS}  processlist | wc | awk '{ print $1 }'`
 
     #----------------------------------#
     if [ "$proc" -lt "16" ]; then
@@ -34,7 +31,7 @@ alter_tables()
     # SQL="ALTER TABLE $DATABASE.$E CHANGE hits hits MEDIUMINT(6) NULL DEFAULT NULL;"
     SQL="UPDATE $DATABASE.$E SET period=DATE_ADD('2013-01-01', INTERVAL (CONV(period_out, 16, 10)*15) DAY);"
     echo "$SQL"; sleep 0.1
-    nohup mysql -u $USERNAME -p$PASSWORD -NB -e  "$SQL" &
+    nohup mysql -uroot -p${PASS} -NB -e  "$SQL" &
         
     #---------------------------------------------------------------------------------------------------------------------#
     last=$proc

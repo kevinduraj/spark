@@ -1,6 +1,6 @@
 #!/bin/bash
 #-----------------------------------------------------------------------------------#
-DB='engine83'
+DB='engine70'
 #-----------------------------------------------------------------------------------#
 #                                 Drop Database
 #-----------------------------------------------------------------------------------#
@@ -8,14 +8,14 @@ recreate_database()
 {
   SQL="DROP DATABASE $DB;"
   echo $SQL
-  RES=`mysql --login-path=local -NB -e "$SQL"`
+  RES=`mysql -uroot -p${PASS} -NB -e "$SQL"`
   echo $RES 
   
   sleep 1 
 
   SQL="CREATE DATABASE $DB DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
   echo $SQL
-  RES=`mysql --login-path=local -NB -e "$SQL"`
+  RES=`mysql -uroot -p${PASS} -NB -e "$SQL"`
   echo $RES 
 }
 #-----------------------------------------------------------------------------------#
@@ -58,7 +58,7 @@ CREATE TABLE $DB.part_$1 (
 
  # period DATETIME NOT NULL DEFAULT NOW()
  echo $SQL
- RES=`mysql --login-path=local -NB -e "$SQL"`
+ RES=`mysql -uroot -p${PASS} -NB -e "$SQL"`
  echo $RES 
 
 }

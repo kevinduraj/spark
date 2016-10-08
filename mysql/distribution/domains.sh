@@ -6,7 +6,7 @@ if [ "$#" -eq 2 ]; then
 
   SQL="SELECT DISTINCT root, COUNT(root) AS total FROM $1 GROUP BY root ORDER BY total DESC LIMIT 60;"; 
   echo "$SQL"
-  RES=`nice mysql -uroot -p$PASSWORD -e  "$SQL"`
+  RES=`nice mysql -uroot -p${PASS} -e  "$SQL"`
   #RES=`mysql -u root -p$PASSWORD -NB -e  "$SQL"`
   echo "$RES"
 
@@ -16,7 +16,7 @@ elif [ "$#" -eq 1 ]; then
   part=$(echo ${res1:7:3})
   SQL="SELECT DISTINCT root, COUNT(root) AS total FROM $1.part_$part GROUP BY root ORDER BY total DESC LIMIT 60;"; 
   echo "$SQL"
-  RES=`nice mysql -uroot -p$PASSWORD -e  "$SQL"`
+  RES=`nice mysql -uroot -p${PASS} -e  "$SQL"`
   echo "$RES"
 
 else 

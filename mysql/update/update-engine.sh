@@ -3,18 +3,15 @@
 # python = int("b5f", 15)
 # gosleep=$((gosleep+2)) 
 #--------------------------------------------------------------------------------------#
-USERNAME='root'
-PASSWORD='xapian64'
-#--------------------------------------------------------------------------------------#
 alter_tables()
 {
   DATABASE=$1
-  TABLE_LIST=`mysql -u $USERNAME -p$PASSWORD -NB -e "SHOW TABLES FROM $DATABASE"`
+  TABLE_LIST=`mysql -uroot -p${PASS} -NB -e "SHOW TABLES FROM $DATABASE"`
   counter=0; gosleep=0; last=0;
 
   for E in $TABLE_LIST
   do
-    proc=`mysqladmin -uroot -pxapian64  processlist | wc | awk '{ print $1 }'`
+    proc=`mysqladmin -uroot -p${PASS}  processlist | wc | awk '{ print $1 }'`
 
     #----------------------------------#
     if [ "$proc" -lt "8" ]; then
@@ -35,7 +32,7 @@ alter_tables()
     SQL="UPDATE $DATABASE.$E SET rank = RAND() * 100 WHERE root LIKE 'twitter.com'; ";
 
     echo "$SQL"; sleep 0.1
-    nohup mysql -u $USERNAME -p$PASSWORD -NB -e  "$SQL" &
+    nohup mysql -uroot -p${PASS} -NB -e  "$SQL" &
         
     #---------------------------------------------------------------------------------------------------------------------#
     last=$proc
