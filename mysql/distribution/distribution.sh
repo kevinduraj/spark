@@ -6,7 +6,7 @@ if [ "$#" -eq 3 ]; then
 
   SQL="SELECT DISTINCT $3, COUNT($3) AS total FROM $1.part_$2 GROUP BY $3 ORDER BY $3;"; 
   echo "$SQL"
-  RES=`nice mysql -uroot -p$PASSWORD -e  "$SQL"`
+  RES=`nice mysql -uroot -p${PASS} -e  "$SQL"`
   #RES=`mysql -u root -p$PASSWORD -NB -e  "$SQL"`
   echo "$RES"
 
@@ -16,21 +16,21 @@ elif [ "$#" -eq 2 ]; then
   part=$(echo ${res1:7:3})
   SQL="SELECT DISTINCT $2, COUNT($2) AS total FROM $1.part_$part GROUP BY $2 ORDER BY $2 limit 30;"; 
   echo "$SQL"
-  RES=`nice mysql -uroot -p$PASSWORD -e  "$SQL"`
+  RES=`nice mysql -uroot -p${PASS} -e  "$SQL"`
   echo "$RES"
 
 else 
   echo "---------------------------------------------"
   echo "     1=engine, 2=table, 3=field              "
   echo "---------------------------------------------"
-  echo "./distribution.sh engine77 rank              "
+  echo "./distribution.sh engine83 rank              "
   echo "---------------------------------------------"
-  echo "./distribution.sh engine77 195 hit1          "
-  echo "./distribution.sh engine77 2a6 hit3          "
-  echo "./distribution.sh engine77 3b7 rank          "
-  echo "./distribution.sh engine77 5f9 root          "
-  echo "./distribution.sh engine77 4c8 sentence      "
-  echo "./distribution.sh engine77 5f9 complex       "
+  echo "./distribution.sh engine83 195 hit1          "
+  echo "./distribution.sh engine83 2a6 hit3          "
+  echo "./distribution.sh engine83 3b7 rank          "
+  echo "./distribution.sh engine83 5f9 root          "
+  echo "./distribution.sh engine83 4c8 sentence      "
+  echo "./distribution.sh engine83 5f9 complex       "
   echo "---------------------------------------------"
 
 fi

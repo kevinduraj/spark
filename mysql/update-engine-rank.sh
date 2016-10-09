@@ -14,7 +14,7 @@ alter_tables()
     proc=`mysqladmin -uroot -p${PASS}  processlist | wc | awk '{ print $1 }'`
 
     #----------------------------------#
-    if [ "$proc" -lt "10" ]; then
+    if [ "$proc" -lt "8" ]; then
     	gosleep=0
     else
     	if [ "$proc" -lt "$last" ]; then
@@ -29,8 +29,7 @@ alter_tables()
     #---------------------------------------------------------------------------------------------------------------------#
     # SQL="ALTER TABLE $DATABASE.$E CHANGE md5url sha256url CHAR(64) CHARACTER SET ascii COLLATE ascii_general_ci NOT NULL;"
     # SQL="ALTER TABLE $DATABASE.$E CHANGE hits hits MEDIUMINT(6) NULL DEFAULT NULL;"
-    # SQL="UPDATE $DATABASE.$E SET rank = RAND() * 100 WHERE root LIKE 'twitter.com'; ";
-    SQL="UPDATE $DATABASE.$E SET rank = 100 + (RAND() * 300);";
+    SQL="UPDATE $DATABASE.$E SET rank = 100 + (RAND() * 100) WHERE root LIKE 'mylife.com'; ";
 
     echo "$SQL"; sleep 0.1
     nohup mysql -uroot -p${PASS} -NB -e  "$SQL" &

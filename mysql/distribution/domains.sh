@@ -24,8 +24,8 @@ else
   echo "---------------------------------------------"
   echo "     1=engine, 2=table, 3=field              "
   echo "---------------------------------------------"
-  echo "./domains.sh engine37                        "
-  echo "./domains.sh engine37.part_5f9               "
+  echo "./domains.sh engine83                        "
+  echo "./domains.sh engine83.part_5f9               "
   echo "---------------------------------------------"
 
 fi
