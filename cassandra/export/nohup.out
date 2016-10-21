@@ -1,1 +1,0 @@
-Connection error: ('Unable to connect to any servers', {'192.168.1.159': error(None, "Tried connecting to [('192.168.1.159', 9042)]. Last error: timed out")})
