@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cqlsh -e "COPY cloud1.diseases (url) TO '/home/temp/diseases-0714.dat';"
+cqlsh -e "COPY cloud4.link3 (url) TO '/home/temp/link3-08-01.dat';"
 
