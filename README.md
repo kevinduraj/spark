@@ -25,7 +25,7 @@ Apache Spark, Cassanra, Jupyter large-scale data processing
  *      |       _\.:||:./_
  *      |      /____/\____\
  *
- * STUFF WILL BREAK IF YOU DON'T. IRREPARABLY. I'M NOT JOKING
+ * STUFF WILL BREAK IF YOU DON'T USE SPARK. IRREPARABLY. I'M NOT JOKING
  *
  */
  ```
